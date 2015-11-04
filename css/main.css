@@ -1,0 +1,272 @@
+body {
+	margin: 0 auto;
+	padding: 0;
+	min-width: 380px;
+}
+
+img {
+	pointer-events: none;
+}
+
+/* FONTS AND TITLES */
+@font-face {
+	font-family: Vibes; /* Гарнитура шрифта */
+    src: url(../fonts/Vibes.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: "SSR";
+    src: url("../fonts/SourceSansProRegular/SourceSansProRegular.eot");
+    src: url("../fonts/SourceSansProRegular/SourceSansProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SourceSansProRegular/SourceSansProRegular.woff") format("woff"),
+    url("../fonts/SourceSansProRegular/SourceSansProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "UbuntuR";
+    src: url("../fonts/UbuntuMonoRegular/UbuntuMonoRegular.eot");
+    src: url("../fonts/UbuntuMonoRegular/UbuntuMonoRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/UbuntuMonoRegular/UbuntuMonoRegular.woff") format("woff"),
+    url("../fonts/UbuntuMonoRegular/UbuntuMonoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "NotoSansRegular";
+    src: url("../fonts/NotoSansRegular/NotoSansRegular.eot");
+    src: url("../fonts/NotoSansRegular/NotoSansRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/NotoSansRegular/NotoSansRegular.woff") format("woff"),
+    url("../fonts/NotoSansRegular/NotoSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Marck";
+    src: url("../fonts/MarckScriptRegular/MarckScriptRegular.eot");
+    src: url("../fonts/MarckScriptRegular/MarckScriptRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MarckScriptRegular/MarckScriptRegular.woff") format("woff"),
+    url("../fonts/MarckScriptRegular/MarckScriptRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+h1 {
+	font-family: SSR;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	margin: 0 auto;
+	padding: 0;
+}
+
+p {
+	font-family: "SSR";
+	font-size: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.copyright {
+	font-size: 14px;
+	color: #bcd9ff;
+}
+
+/* MAIN HEADER */
+.header {
+	width: 100%;
+	display: block;
+	max-width: 1260px;
+	margin: 0 auto;
+}
+
+
+.header .logo {
+	float: left;
+}
+
+.header .logo .img {
+	width: 350px;
+	height: 85px;
+	margin: 45px 0px;
+	opacity: 0.9;
+	background-image: url(../img/header-logo/header-logo.png);
+	background-size: 100% 75px;
+	background-repeat: no-repeat;
+}
+
+.header .logo .img:hover{
+	opacity: 1;
+}
+
+.header .logo .img:active {
+	background-image: url(../img/header-logo/header-logo-active.png);
+}
+
+.header .logo a {
+	padding-top: 50px;
+}
+
+.header .nav-menu {
+	display: table-cell;
+	float: right;
+	margin-top: 50px;
+	padding: 0;
+	list-style-type: none;
+}
+
+.header .nav-menu > li {
+	float: left;
+	display: inline-block;
+}
+
+.header .nav-menu > li > a {
+	display: table-cell;
+	padding: 20px 15px;
+	margin:  0px;
+	color: #3a3a3a;
+	font-weight: bold;
+	font-size: 22px;
+	font-family: Marck;
+}
+
+.header .nav-menu > li > a:hover {
+	color: #6F4E37;
+}
+
+
+@media (max-width: 960px) {
+	.header .logo .img {
+		width: 200px;
+	}
+}
+
+@media (max-width: 800px) {	
+	.header .logo .img {
+		display: none;
+	}
+}
+
+@media (max-width: 550px) {
+	.header .navigation{
+		display: none;
+	}
+}
+
+/* MAIN CONTENT */
+.main {
+	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0;
+	background-image: url(../img/main/main-bg.jpg);
+	background-size: 100% 1000px;
+	background-position: center;
+	height: 1000px;
+}
+
+
+.main .content {
+	max-width: 1200px;
+	color: white;
+	margin: 0 auto;
+	height: 100%;
+}
+
+#moscow img {
+	width: 100%;
+	height: 900px;
+}
+
+.about {
+
+}
+
+
+/* MAIN FOOTER */
+.main-footer {
+	float: left;
+	width: 100%;
+	background-color: black;
+	text-align: center;
+	opacity: 0.9;
+	margin: -50px 0px;
+}
+
+.main-footer-inner {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.main-footer .footer-left {
+	margin-top: 10px;
+	width: 30%;
+	float: left;
+	margin-right: 0;
+	padding-right: 0;
+}
+
+.main-footer p {
+	margin: 0;
+}
+
+.main-footer .footer-right {
+	margin-top: 10px;
+	width: 35%;
+	float: left;
+}
+
+.main-footer .footer-main {
+	width: 35%;
+	float: left;
+	margin: 0;
+}
+
+.main-footer .footer-main img {
+	border-radius: 25px;
+}
+
+.main-footer .footer-main > ul > li {
+	display: inline-block;
+	margin-left: 40px;
+	opacity: 0.4;
+}
+
+.main-footer .footer-main > ul > li:hover {
+	opacity: 1;
+}
+
+.main-footer .footer-main > ul > li:active {
+	opacity: 0.1;
+}
+
+.main-footer .footer-main > ul > li > a {
+	position: absolute;
+	display: inline-block;
+	margin-top: -25px;
+}
+
+@media (max-width: 550px) {
+	.main-footer .footer-right {
+		display: none;
+	}
+
+	.main-footer .footer-main > ul > li {
+		margin-left: 35px;
+	}
+
+	.main-footer .footer-main {
+		width: 50%;
+		float: left;
+	}
+	.main-footer .footer-left {
+		width: 45%;
+	}
+}

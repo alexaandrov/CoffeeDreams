@@ -1,0 +1,243 @@
+body {
+	margin: 0 auto;
+	padding: 0;
+	min-width: 380px;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	pointer-events: none;
+}
+
+/* FONTS AND TITLES */
+@font-face {
+	font-family: Vibes; /* Гарнитура шрифта */
+    src: url(../fonts/Vibes.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+	font-family: Slavjanic;
+	src: url(../fonts/slavjanic.TTF);
+}
+
+@font-face {
+    font-family: "SSR";
+    src: url("../fonts/SourceSansProRegular/SourceSansProRegular.eot");
+    src: url("../fonts/SourceSansProRegular/SourceSansProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SourceSansProRegular/SourceSansProRegular.woff") format("woff"),
+    url("../fonts/SourceSansProRegular/SourceSansProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "UbuntuR";
+    src: url("../fonts/UbuntuMonoRegular/UbuntuMonoRegular.eot");
+    src: url("../fonts/UbuntuMonoRegular/UbuntuMonoRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/UbuntuMonoRegular/UbuntuMonoRegular.woff") format("woff"),
+    url("../fonts/UbuntuMonoRegular/UbuntuMonoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "NotoSansRegular";
+    src: url("../fonts/NotoSansRegular/NotoSansRegular.eot");
+    src: url("../fonts/NotoSansRegular/NotoSansRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/NotoSansRegular/NotoSansRegular.woff") format("woff"),
+    url("../fonts/NotoSansRegular/NotoSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+h1 {
+	font-family: Slavjanic;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	margin: 0 auto;
+	padding: 0;
+}
+
+p {
+	font-family: "SSR";
+	font-size: 20px;
+}
+
+.main-content-title {
+	color: white;
+	text-align: center;
+	font-family: Vibes;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 45px;
+	box-shadow: 4;
+}
+
+/* MAIN HEADER */
+.main-header {
+	float: left;
+	width: 100%;
+	background-color: black;
+	opacity: 0.9;
+}
+
+.main-header:hover {
+	opacity: 1;
+}
+
+.main-header-inner {
+	display: block;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.main-header .main-logo {
+	float: left;
+}
+
+.main-header-inner-menu {
+	display: table-cell;
+	float: left;
+	padding: 0;
+	margin: 0 auto;
+	list-style-type: none;
+}
+
+.main-header-inner-menu > li {
+	display: inline-block;
+}
+
+.main-header-inner-menu > li > a {
+	display: table-cell;
+	padding: 20px;
+	margin:  0 10px;
+	color: white;
+	font-weight: bold;
+}
+
+.main-header-inner-menu > li > a:hover {
+	background-color: #a6011c;
+}
+
+.main-actions {
+	display: inline-block;
+	float: right;
+	color: white;
+}
+
+.main-actions > div {
+	display: table-cell;
+	padding: 20px;
+	margin: 0 10px;
+}
+
+/* MAIN CONTENT */
+.main-content {
+	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.inner > * {
+	max-width: 960px;
+	color: white;
+	margin: 0 auto;
+}
+
+@media (max-width: 750px) {
+	.main-header {
+		display: none;
+	}
+}
+
+@media (max-width: 850px) {
+	.main-header .main-logo {
+		display: none;
+	}
+}
+
+
+/* MAIN FOOTER */
+.main-footer {
+	float: left;
+	width: 100%;
+	background-color: black;
+	color: #bcd9ff;
+	text-align: center;
+	opacity: 0.9;
+	margin: -50px 0px;
+}
+
+.main-footer-inner {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.main-footer .left {
+	margin-top: 10px;
+	width: 30%;
+	float: left;
+	margin-right: 0;
+	padding-right: 0;
+}
+
+.main-footer p {
+	margin: 0;
+}
+
+.main-footer .main {
+	width: 35%;
+	float: left;
+	margin: 0;
+}
+
+.main-footer .right {
+	margin-top: 10px;
+	width: 35%;
+	float: left;
+}
+
+.main-footer .main > ul > li {
+	display: inline-block;
+	margin-left: 40px;
+	opacity: 0.4;
+}
+
+.main-footer .main > ul > li:hover {
+	opacity: 1;
+}
+
+.main-footer .main > ul > li:active {
+	opacity: 0.1;
+}
+
+.main-footer .main > ul > li > a {
+	position: absolute;
+	display: inline-block;
+	margin-top: -25px;
+}
+
+@media (max-width: 550px) {
+	.main-footer .right {
+		display: none;
+	}
+
+	.main-footer .main > ul > li {
+	margin-left: 35px;
+	}
+
+	.main-footer .main {
+		width: 50%;
+		float: left;
+	}
+	.main-footer .left {
+		width: 45%;
+	}
+}

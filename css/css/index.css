@@ -1,0 +1,11 @@
+.main-content {
+	background-image: url(../img/main/main-content.jpg);
+	background-size: 100% 1050px;
+	height: 1050px;
+}
+
+.main-content .main-photo > img {
+	width: 100%;
+	height: 800px;
+	margin-top: 20px;
+}
