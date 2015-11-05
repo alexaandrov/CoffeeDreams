@@ -1,7 +1,7 @@
 body {
 	margin: 0 auto;
 	padding: 0;
-	min-width: 380px;
+	min-width: 800px;
 }
 
 img {
@@ -53,6 +53,7 @@ img {
     font-style: normal;
     font-weight: normal;
 }
+
 h1 {
 	font-family: SSR;
 	margin: 0;
@@ -60,13 +61,15 @@ h1 {
 }
 
 h2 {
-	margin: 0 auto;
+	margin: 0;
 	padding: 0;
 }
 
 p {
-	font-family: "SSR";
+	font-family: SSR;
 	font-size: 20px;
+	margin: 0;
+	padding: 0;
 }
 
 a {
@@ -152,7 +155,7 @@ a {
 
 @media (max-width: 960px) {
 	.header .logo .img {
-		width: 200px;
+		width: 260px;
 	}
 }
 
@@ -160,33 +163,41 @@ a {
 	.header .logo .img {
 		display: none;
 	}
-}
-
-@media (max-width: 550px) {
-	.header .navigation{
+	.header .nav-menu {
 		display: none;
 	}
 }
 
 /* MAIN CONTENT */
-.main {
+.main #top {
 	width: 100%;
-	max-width: 1920px;
 	margin: 0 auto;
 	padding: 0;
 	background-image: url(../img/main/main-bg.jpg);
 	background-size: 100% 1000px;
 	background-position: center;
 	height: 1000px;
+	overflow: hidden;
+}
+
+.main #top .info {
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-top: 500px;
+	padding-left: 20px;
+}
+
+.main #top .info .h2-info {
+	color: white;
+	font-family: UbuntuR, Arial;
+	font-size: 40px;
 
 }
 
-
-.main .content {
-	max-width: 1200px;
+.main #top .info .text {
 	color: white;
-	margin: 0 auto;
-	height: 100%;
+	font-family: Marck;
+	font-size: 25px;
 }
 
 
