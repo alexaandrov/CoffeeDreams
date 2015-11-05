@@ -1,7 +1,7 @@
 body {
 	margin: 0 auto;
 	padding: 0;
-	min-width: 800px;
+	min-width: 890px;
 }
 
 img {
@@ -9,17 +9,24 @@ img {
 }
 
 /* FONTS AND TITLES */
-@font-face {
-	font-family: Vibes; /* Гарнитура шрифта */
-    src: url(../fonts/Vibes.ttf); /* Путь к файлу со шрифтом */
-}
 
+/* font-family: "CaviarDreamsRegular"; */
 @font-face {
-    font-family: "SSR";
-    src: url("../fonts/SourceSansProRegular/SourceSansProRegular.eot");
-    src: url("../fonts/SourceSansProRegular/SourceSansProRegular.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/SourceSansProRegular/SourceSansProRegular.woff") format("woff"),
-    url("../fonts/SourceSansProRegular/SourceSansProRegular.ttf") format("truetype");
+    font-family: "Caviar";
+    src: url("../fonts/CaviarDreamsRegular/CaviarDreamsRegular.eot");
+    src: url("../fonts/CaviarDreamsRegular/CaviarDreamsRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/CaviarDreamsRegular/CaviarDreamsRegular.woff") format("woff"),
+    url("../fonts/CaviarDreamsRegular/CaviarDreamsRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "CaviarDreamsBold"; */
+@font-face {
+    font-family: "CaviarBold";
+    src: url("../fonts/CaviarDreamsBold/CaviarDreamsBold.eot");
+    src: url("../fonts/CaviarDreamsBold/CaviarDreamsBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/CaviarDreamsBold/CaviarDreamsBold.woff") format("woff"),
+    url("../fonts/CaviarDreamsBold/CaviarDreamsBold.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
@@ -35,7 +42,7 @@ img {
 }
 
 @font-face {
-    font-family: "NotoSansRegular";
+    font-family: "Noto";
     src: url("../fonts/NotoSansRegular/NotoSansRegular.eot");
     src: url("../fonts/NotoSansRegular/NotoSansRegular.eot?#iefix")format("embedded-opentype"),
     url("../fonts/NotoSansRegular/NotoSansRegular.woff") format("woff"),
@@ -55,7 +62,7 @@ img {
 }
 
 h1 {
-	font-family: SSR;
+	font-family: UbuntuR;
 	margin: 0;
 	padding: 0;
 }
@@ -66,7 +73,7 @@ h2 {
 }
 
 p {
-	font-family: SSR;
+	font-family: Caviar;
 	font-size: 20px;
 	margin: 0;
 	padding: 0;
@@ -83,8 +90,6 @@ a {
 }
 
 /* MAIN HEADER */
-
-
 .header {
 	width: 100%;
 	max-width: 1280px;
@@ -97,7 +102,7 @@ a {
 	display: block;
 	max-width: 1280px;
 	position: absolute;
-	min-width: 800px;
+	min-width: 850px;
 }
 
 .header .logo {
@@ -143,14 +148,25 @@ a {
 	display: table-cell;
 	padding: 20px 15px;
 	margin:  0px;
-	color: #3a3a3a;
+	color: #5B392E;
 	font-weight: bold;
-	font-size: 22px;
-	font-family: Marck;
+	font-size: 27px;
+	font-family: Marck, Arial;
+	
+	-moz-transition: all 0.4s ease-out;
+	-o-transition: all 0.4s ease-out;
+	-webkit-transition: all 0.3s ease-out;
 }
 
 .header .nav-menu > li > a:hover {
-	color: #6F4E37;
+	color: #F3F1EB;
+}
+
+.header .nav-menu > li > a:active {
+	color: #301A0B;
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	-webkit-transition: all 0.08s ease-out;
 }
 
 
@@ -173,25 +189,88 @@ a {
 }
 
 .main #top .info {
-	max-width: 1200px;
+	max-width: 1280px;
 	margin: 0 auto;
-	margin-top: 500px;
+	margin-top: 280px;
 	padding-left: 20px;
+	box-shadow: 10px;
 }
 
 .main #top .info .h2-info {
 	color: white;
 	font-family: UbuntuR, Arial;
-	font-size: 40px;
-
+	font-size: 55px;
+	margin-bottom: 10px;
+	text-shadow: rgb(13, 6, 1) -4px 5px 1px;
 }
 
 .main #top .info .text {
 	color: white;
-	font-family: Marck;
-	font-size: 25px;
+	font-family: Marck, Arial;
+	font-weight: bold;
+	font-size: 45px;
+	max-width: 350px;
+	text-shadow: rgb(13, 6, 1) -4px 5px 1px;
 }
 
+.main #top .info a.button {
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	user-select: none;
+	background: #6F4E37;
+	padding: 25px 15px;
+	margin-top: 20px;
+	outline: none;
+	border-radius: 12px;
+	font-family: Noto, Arial;
+	font-size: 24px;
+	font-weight: bold;
+	-webkit-box-shadow: -9px 11px 13px 0px rgba(50, 50, 50, 0.72);
+	-moz-box-shadow:    -9px 11px 13px 0px rgba(50, 50, 50, 0.72);
+	box-shadow:         -9px 11px 13px 0px rgba(50, 50, 50, 0.72);
+}
+
+.main #top .info a.button:hover {
+	background: #CEAE82;
+}
+
+.main #top .info a.button:active {
+	background: #5B392E;
+}
+
+.main #about {
+	background: #c2c2c2;
+	overflow: auto;
+}
+
+.main #about .bork{
+	background-image: url(../img/about.png);
+	background-repeat: no-repeat;
+	background-size: 800px 900px;
+	width: 45%;
+	height: 800px;
+	float: left;
+
+}
+
+.main #about .info {
+	width: 40%;
+	float: left;
+	margin-top: 300px;	
+}
+
+/*FONT*/
+.main #about .info .h2-good {
+	font-family: Caviar, Arial;
+	font-size: 70px;
+} 
+
+.main #about .info .text2 {
+	margin-top: 10px;
+	font-family: Caviar, Arial;
+	font-size: 30px;
+}
 
 /* MAIN FOOTER */
 .main-footer {
@@ -200,7 +279,7 @@ a {
 	background-color: black;
 	text-align: center;
 	opacity: 0.9;
-	margin: -50px 0px;
+	margin: 0;
 }
 
 .main-footer-inner {
@@ -221,7 +300,7 @@ a {
 }
 
 .main-footer .footer-right {
-	margin-top: 10px;
+	margin-top: 15px;
 	width: 35%;
 	float: left;
 }
