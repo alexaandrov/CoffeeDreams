@@ -80,13 +80,21 @@ a {
 }
 
 /* MAIN HEADER */
+
+
 .header {
 	width: 100%;
-	display: block;
-	max-width: 1260px;
+	max-width: 1280px;
 	margin: 0 auto;
+	overflow: auto;
 }
 
+.header .wrapper {
+	width: 100%;
+	display: block;
+	max-width: 1280px;
+	position: fixed;
+}
 
 .header .logo {
 	float: left;
@@ -170,6 +178,7 @@ a {
 	background-size: 100% 1000px;
 	background-position: center;
 	height: 1000px;
+
 }
 
 
@@ -178,15 +187,6 @@ a {
 	color: white;
 	margin: 0 auto;
 	height: 100%;
-}
-
-#moscow img {
-	width: 100%;
-	height: 900px;
-}
-
-.about {
-
 }
 
 
