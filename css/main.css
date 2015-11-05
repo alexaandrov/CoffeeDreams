@@ -247,8 +247,8 @@ a {
 .main #about .bork{
 	background-image: url(../img/about.png);
 	background-repeat: no-repeat;
-	background-size: 800px 900px;
-	width: 45%;
+	background-size: 100% 900px;
+	width: 50%;
 	height: 800px;
 	float: left;
 
