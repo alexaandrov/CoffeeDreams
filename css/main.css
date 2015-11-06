@@ -1,7 +1,7 @@
 body {
 	margin: 0 auto;
 	padding: 0;
-	min-width: 890px;
+	min-width: 1280px;
 }
 
 img {
@@ -72,6 +72,11 @@ h2 {
 	padding: 0;
 }
 
+.h2-good {
+	font-family: Caviar, Arial;
+} 
+
+
 p {
 	font-family: Caviar;
 	font-size: 20px;
@@ -117,6 +122,9 @@ a {
 	background-image: url(../img/header-logo/header-logo.png);
 	background-size: 100% 75px;
 	background-repeat: no-repeat;
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	-webkit-transition: all 0.1s ease-out;
 }
 
 .header .logo .img:hover{
@@ -153,8 +161,8 @@ a {
 	font-size: 27px;
 	font-family: Marck, Arial;
 	
-	-moz-transition: all 0.4s ease-out;
-	-o-transition: all 0.4s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
 	-webkit-transition: all 0.3s ease-out;
 }
 
@@ -164,8 +172,8 @@ a {
 
 .header .nav-menu > li > a:active {
 	color: #301A0B;
-	-moz-transition: all 0.1s ease-out;
-	-o-transition: all 0.1s ease-out;
+	-moz-transition: all 0.08s ease-out;
+	-o-transition: all 0.08s ease-out;
 	-webkit-transition: all 0.08s ease-out;
 }
 
@@ -181,22 +189,18 @@ a {
 	width: 100%;
 	margin: 0 auto;
 	padding: 0;
-	background-image: url(../img/main/main-bg.jpg);
-	background-size: 100% 1000px;
-	background-position: center;
-	height: 1000px;
 	overflow: hidden;
-}
+	height: 1080px;
+}	
 
-.main #top .info {
+.main #about .buy {
 	max-width: 1280px;
 	margin: 0 auto;
-	margin-top: 280px;
-	padding-left: 20px;
+	margin-bottom: 50px;
 	box-shadow: 10px;
 }
 
-.main #top .info .h2-info {
+.main #about .buy .h2-info {
 	color: white;
 	font-family: UbuntuR, Arial;
 	font-size: 55px;
@@ -204,7 +208,7 @@ a {
 	text-shadow: rgb(13, 6, 1) -4px 5px 1px;
 }
 
-.main #top .info .text {
+.main #about .buy .text {
 	color: white;
 	font-family: Marck, Arial;
 	font-weight: bold;
@@ -213,29 +217,29 @@ a {
 	text-shadow: rgb(13, 6, 1) -4px 5px 1px;
 }
 
-.main #top .info a.button {
+.main #about .buy a.button {
 	display: inline-block;
 	color: #fff;
 	text-decoration: none;
 	user-select: none;
 	background: #6F4E37;
-	padding: 25px 15px;
+	padding: 25px 100px;
 	margin-top: 20px;
 	outline: none;
 	border-radius: 12px;
-	font-family: Noto, Arial;
-	font-size: 24px;
+	font-family: Marck, Arial;
+	font-size: 34px;
 	font-weight: bold;
 	-webkit-box-shadow: -9px 11px 13px 0px rgba(50, 50, 50, 0.72);
 	-moz-box-shadow:    -9px 11px 13px 0px rgba(50, 50, 50, 0.72);
 	box-shadow:         -9px 11px 13px 0px rgba(50, 50, 50, 0.72);
 }
 
-.main #top .info a.button:hover {
+.main #about .buy a.button:hover {
 	background: #CEAE82;
 }
 
-.main #top .info a.button:active {
+.main #about .buy a.button:active {
 	background: #5B392E;
 }
 
@@ -244,12 +248,17 @@ a {
 	overflow: auto;
 }
 
+.main #about .info {
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
 .main #about .bork{
 	background-image: url(../img/about.png);
 	background-repeat: no-repeat;
 	background-size: 100% 900px;
 	width: 50%;
-	height: 800px;
+	height: 900px;
 	float: left;
 
 }
@@ -257,19 +266,71 @@ a {
 .main #about .info {
 	width: 40%;
 	float: left;
-	margin-top: 300px;	
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 /*FONT*/
+
 .main #about .info .h2-good {
-	font-family: Caviar, Arial;
 	font-size: 70px;
-} 
+}
 
 .main #about .info .text2 {
 	margin-top: 10px;
 	font-family: Caviar, Arial;
 	font-size: 30px;
+}
+
+
+.main #how-we-work {
+	background-image: url(../img/how-we-work/bg.jpg);
+	background: #1f1d1e;
+	height: 1450px;
+}
+
+.main #how-we-work .wrapper {
+	max-width: 1280px;
+	margin: 0 auto;
+	height: 1450px;
+}
+
+.main #how-we-work .wrapper .h2-good {
+	color: white;
+	font-size: 45px;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.main #how-we-work .block {
+	width: 400px;
+	height: 600px;
+	float: left;
+	margin: 10px;
+	margin-bottom: 30px;
+}
+
+.main #how-we-work .blocks .photo {
+	width: 100%;
+	height: 50%;
+	border-radius: 1px;
+}
+
+.main #how-we-work .block hr {
+	border: none;
+	background-color: white;
+	height: 2px;
+	width: 150px;
+	margin: 10px auto;
+
+}
+
+.main #how-we-work .block p {
+	font-size: 27px;
+	padding: 0 10px;
+	text-align: center;
+	color: white;
 }
 
 /* MAIN FOOTER */
@@ -319,6 +380,9 @@ a {
 	display: inline-block;
 	margin-left: 40px;
 	opacity: 0.4;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
 }
 
 .main-footer .footer-main > ul > li:hover {
