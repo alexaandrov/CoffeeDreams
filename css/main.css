@@ -77,6 +77,12 @@ h2 {
 	font-family: Caviar, Arial;
 } 
 
+h3 {
+	font-family: Caviar, Arial;
+	padding: 0;
+	margin: 0;
+}
+
 
 p {
 	font-family: Caviar;
@@ -499,6 +505,78 @@ a {
 	background-attachment: fixed;
 	width: 100%;
 	height: 800px;
+	overflow: hidden;
+}
+
+.main #write-us .wrapper {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.main #write-us form {
+	margin-top: 200px;
+	width: 100%;
+	background-image: url(../img/write-us-bg.jpg);
+	background-position: center;
+	border-radius: 5px;
+	opacity: 0.9;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+}
+
+.main #write-us form:hover {
+	opacity: 1;
+}
+
+.main #write-us form h3 {
+	color: white;
+	text-align: center;
+	font-size: 35px;
+	padding: 20px;
+	/*margin: 20px;*/
+}
+
+.main #write-us input[type="text"] {
+	font-family: 'Comic Sans MS';
+	font-weight: bold;
+	width: 75%;
+	color: #3d3d3d;
+    border-radius: 4px;
+	font-size: 17px;
+	padding: 15px 30px;
+	margin: 4px 30px;
+    border: 0 solid black;
+}
+
+.main #write-us input[type="submit"] {
+	/*color: #099ffe;*/
+	color: #fff;
+	background: #0068ab;
+    border-radius: 4px;
+	width: 87%;
+	padding: 20px 0px;
+	margin: 10px 30px;
+	margin-bottom: 20px;
+	font-size: 17px;
+	/*padding: 15px 100%;*/
+	text-decoration: none;
+	user-select: none;
+    border: 0 solid black;
+	font-family: Caviar, Arial;
+	font-weight: bold;
+	outline: none;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	-webkit-transition: all 0.2s ease-out;
+}
+
+.main #write-us input[type="submit"]:hover {
+	background-color: #02588f;
+}
+
+.main #write-us input[type="submit"]:active {
+	background-color: #002740;
 }
 
 /* MAIN FOOTER */
