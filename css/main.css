@@ -198,55 +198,6 @@ a {
 	height: 1080px;
 }	
 
-.main #about .buy {
-	max-width: 1280px;
-	margin: 0 auto;
-	margin-bottom: 50px;
-	box-shadow: 10px;
-}
-
-.main #about .buy .h2-info {
-	color: white;
-	font-family: UbuntuR, Arial;
-	font-size: 55px;
-	margin-bottom: 10px;
-	text-shadow: rgb(13, 6, 1) -4px 5px 1px;
-}
-
-.main #about .buy .text {
-	color: white;
-	font-family: Marck, Arial;
-	font-weight: bold;
-	font-size: 45px;
-	max-width: 350px;
-	text-shadow: rgb(13, 6, 1) -4px 5px 1px;
-}
-
-.main #about .buy a.button {
-	display: inline-block;
-	color: #fff;
-	text-decoration: none;
-	user-select: none;
-	background: #6F4E37;
-	padding: 25px 100px;
-	margin-top: 20px;
-	outline: none;
-	border-radius: 12px;
-	font-family: Marck, Arial;
-	font-size: 34px;
-	font-weight: bold;
-	-webkit-box-shadow: -9px 11px 13px 0px rgba(50, 50, 50, 0.72);
-	-moz-box-shadow:    -9px 11px 13px 0px rgba(50, 50, 50, 0.72);
-	box-shadow:         -9px 11px 13px 0px rgba(50, 50, 50, 0.72);
-}
-
-.main #about .buy a.button:hover {
-	background: #CEAE82;
-}
-
-.main #about .buy a.button:active {
-	background: #5B392E;
-}
 
 .main #about {
 	background: #c2c2c2;
@@ -261,9 +212,9 @@ a {
 .main #about .bork{
 	background-image: url(../img/about.png);
 	background-repeat: no-repeat;
-	background-size: 100% 900px;
+	background-size: 100% 800px;
 	width: 50%;
-	height: 900px;
+	height: 800px;
 	float: left;
 
 }
@@ -284,41 +235,41 @@ a {
 .main #about .info .text2 {
 	margin-top: 10px;
 	font-family: Caviar, Arial;
-	font-size: 30px;
+	font-size: 25px;
 }
 
 
 .main #how-we-work {
 	background-image: url(../img/how-we-work/bg.jpg);
 	background: #1f1d1e;
-	height: 1450px;
+	height: 1300px;
 }
 
 .main #how-we-work .wrapper {
 	max-width: 1280px;
 	margin: 0 auto;
-	height: 1450px;
+	height: 1200px;
 }
 
 .main #how-we-work .wrapper .h2-good {
 	color: white;
-	font-size: 45px;
+	font-size: 35px;
 	text-align: center;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 35px;
+	padding-bottom: 35px;
 }
 
 .main #how-we-work .block {
 	width: 400px;
-	height: 600px;
+	height: 550px;
 	float: left;
 	margin: 10px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .main #how-we-work .blocks .photo {
 	width: 100%;
-	height: 50%;
+	height: 45%;
 	border-radius: 1px;
 }
 
@@ -348,8 +299,59 @@ a {
 }
 
 .main #overview .wrapper {
-	margin: 0 auto;
-	height: 100%;
+	overflow: hidden;
+}
+
+.main #overview .buy {
+	margin-bottom: 50px;
+	box-shadow: 10px;
+	width: 500px;
+	float: left;
+	margin-top: 80px;
+	margin-left: 200px;
+}
+
+.main #overview  .buy .h2-info {
+	color: white;
+	font-family: UbuntuR, Arial;
+	font-size: 55px;
+	margin-bottom: 10px;
+	text-shadow: rgb(13, 6, 1) -4px 5px 1px;
+}
+
+.main #overview  .buy .text {
+	color: white;
+	font-family: Marck, Arial;
+	font-weight: bold;
+	font-size: 45px;
+	max-width: 350px;
+	text-shadow: rgb(13, 6, 1) -4px 5px 1px;
+}
+
+.main #overview  .buy a.button {
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	user-select: none;
+	background: #6F4E37;
+	padding: 25px 100px;
+	margin-top: 20px;
+	outline: none;
+	border-radius: 12px;
+	font-family: Marck, Arial;
+	font-size: 34px;
+	font-weight: bold;
+	-webkit-box-shadow: -9px 11px 13px 0px rgba(50, 50, 50, 0.72);
+	-moz-box-shadow:    -9px 11px 13px 0px rgba(50, 50, 50, 0.72);
+	box-shadow:         -9px 11px 13px 0px rgba(50, 50, 50, 0.72);
+}
+
+.main #overview  .buy a.button:hover {
+	background: #CEAE82;
+}
+
+.main #overview  .buy a.button:active {
+	background: #5B392E;
 }
 
 .main #overview .bork {
@@ -359,8 +361,52 @@ a {
 	width: 700px;
 	height: 600px;
 	float: right;
-	margin-top: 50px;
+	margin-top: 80px;
 	margin-right: -120px;
+}
+
+.main #overview .gallery {
+	margin-top: 440px;
+	width: 800px;
+	background: red;
+}
+
+.overview #gallery {
+	position:relative;
+	margin: 100px auto;
+	padding: 5px;
+	width: 660px;
+	height: 360px;
+}
+
+.overview #gallery #src {
+	margin:20px auto;
+	width: 600px;
+	height: 320px;
+	margin-top:20px;
+	background-color: white;
+	background-size:cover;
+	border-radius: 10px;
+	box-shadow: 0 0 12px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 0 0 12px rgba(0,0,0,0.4);
+	-mox-box-shadow: 0 0 12px rgba(0,0,0,0.4);
+	filter: progid:DXImageTransform.Microsoft.shadow(direction=120, color=#000000, strength=10);
+}
+
+button {
+	position: absolute;
+	top: 150px;
+	width: 25px;
+	height: 70px;
+	font: 12pt arial,tahoma,sans-serif;
+	text-align: center;
+}
+
+.left {
+	left:5px;
+}
+.right {
+	right:5px;
 }
 
 /* MAIN FOOTER */
