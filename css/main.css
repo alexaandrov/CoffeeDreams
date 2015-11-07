@@ -193,7 +193,7 @@ a {
 
 .main #top {
 	margin-top: 0px;
-	background-image: url(../img/top/bg.jpg);
+	background-image: url(../img/main-bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	/*background-attachment: fixed;*/
@@ -381,7 +381,7 @@ a {
 	width: 100%;
 	overflow: hidden;
 	height: 1000px;
-	background-image: url(../img/top/bg.jpg);
+	background-image: url(../img/main-bg.jpg);
 	background-position: center;
 	background-attachment: fixed;
 	background-size: 100%;
@@ -412,6 +412,7 @@ a {
 	-mox-box-shadow: 0 0 12px rgba(0,0,0,0.4);
 	filter: progid:DXImageTransform.Microsoft.shadow(direction=120, color=#000000, strength=10);*/
 }
+
 .main #video-blog iframe {
 	margin: auto;
 }
@@ -470,6 +471,35 @@ a {
 	color: white;
 }
 
+.main #map {
+	width: 100%;
+	height: 800px;
+}
+
+.main #map .wrapper {
+	max-width: 400px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.main #map h2 {
+	font-size: 80px;
+	font-weight: bold;
+	text-align: center;
+	position: absolute;
+	z-index: 101;
+	color: black;
+}
+
+.main #write-us {
+	background-image: url(../img/main-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	background-attachment: fixed;
+	width: 100%;
+	height: 800px;
+}
 
 /* MAIN FOOTER */
 .main-footer {
