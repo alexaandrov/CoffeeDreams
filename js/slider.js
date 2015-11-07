@@ -1,5 +1,5 @@
 var slider = {
-	slides:['../img/museums/slider/1.jpg','../img/museums/slider/2.jpg','../img/museums/slider/5.jpg','../img/museums/slider/1.jpg','../img/museums/slider/5.jpg'],
+	slides:['./img/top/slider/1.jpg','./img/top/slider/2.jpg','./img/top/slider/3.jpg','./img/top/slider/4.jpg','./img/top/slider/5.jpg'],
 	frame:0, // текущий кадр для отбражения - индекс картинки из массива
 	set: function(image) { // установка нужного фона слайдеру
 		document.getElementById("scr").style.backgroundImage = "url("+image+")";
@@ -22,5 +22,5 @@ window.onload = function() { // запуск слайдера после заг�
 	slider.init();
 	setInterval(function() { // ставим пятисекундный интервал для перелистывания картинок
 		slider.right();
-	},3500);
+	}, 5000);
 };

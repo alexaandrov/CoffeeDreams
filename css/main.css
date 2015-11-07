@@ -190,7 +190,7 @@ a {
 	margin: 0 auto;
 }
 
-.main #top {
+.main #video-blog {
 	width: 100%;
 	margin: 0 auto;
 	padding: 0;
@@ -289,29 +289,29 @@ a {
 	color: white;
 }
 
-.main #overview {
-	background-image: url(../img/overview/bg.jpg);
+.main #top {
+	margin-top: 0px;
+	background-image: url(../img/top/bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 100% 800px;
+	background-size: 100% 1000px;
 	width: 100%;
-	height: 800px;
+	height: 1000px; 
 }
 
-.main #overview .wrapper {
+.main #top .wrapper {
 	overflow: hidden;
 }
 
-.main #overview .buy {
-	margin-bottom: 50px;
+.main #top .buy {
 	box-shadow: 10px;
 	width: 500px;
 	float: left;
-	margin-top: 80px;
+	margin-top: 200px;
 	margin-left: 200px;
 }
 
-.main #overview  .buy .h2-info {
+.main #top  .buy .h2-info {
 	color: white;
 	font-family: UbuntuR, Arial;
 	font-size: 55px;
@@ -319,16 +319,16 @@ a {
 	text-shadow: rgb(13, 6, 1) -4px 5px 1px;
 }
 
-.main #overview  .buy .text {
+.main #top  .buy .text {
 	color: white;
 	font-family: Marck, Arial;
 	font-weight: bold;
 	font-size: 45px;
-	max-width: 350px;
 	text-shadow: rgb(13, 6, 1) -4px 5px 1px;
+	max-width: 350px;
 }
 
-.main #overview  .buy a.button {
+.main #top  .buy a.button {
 	display: inline-block;
 	color: #fff;
 	text-decoration: none;
@@ -346,46 +346,42 @@ a {
 	box-shadow:         -9px 11px 13px 0px rgba(50, 50, 50, 0.72);
 }
 
-.main #overview  .buy a.button:hover {
+.main #top  .buy a.button:hover {
 	background: #CEAE82;
 }
 
-.main #overview  .buy a.button:active {
+.main #top  .buy a.button:active {
 	background: #5B392E;
 }
 
-.main #overview .bork {
-	background-image: url(../img/overview/bork2.png);
+.main #top .bork {
+	background-image: url(../img/top/bork2.png);
 	background-repeat: no-repeat;
 	background-size: 80% 600px;
 	width: 700px;
 	height: 600px;
 	float: right;
-	margin-top: 80px;
+	margin-top: 200px;
 	margin-right: -120px;
 }
 
-.main #overview .gallery {
-	margin-top: 440px;
-	width: 800px;
-	background: red;
-}
-
-.overview #gallery {
+.main #top #slider {
 	position:relative;
-	margin: 100px auto;
+	margin-top: 550px;
+	margin-left: 50px;
 	padding: 5px;
 	width: 660px;
-	height: 360px;
+	height:360px;
 }
 
-.overview #gallery #src {
+.main #top #slider #scr {
 	margin:20px auto;
 	width: 600px;
 	height: 320px;
 	margin-top:20px;
 	background-color: white;
-	background-size:cover;
+	background-size: 100% 320px;
+	background-position: center;
 	border-radius: 10px;
 	box-shadow: 0 0 12px rgba(0,0,0,0.4);
 	-webkit-box-shadow: 0 0 12px rgba(0,0,0,0.4);
@@ -393,20 +389,41 @@ a {
 	filter: progid:DXImageTransform.Microsoft.shadow(direction=120, color=#000000, strength=10);
 }
 
-button {
+.main #top #slider button {
 	position: absolute;
 	top: 150px;
 	width: 25px;
 	height: 70px;
 	font: 12pt arial,tahoma,sans-serif;
 	text-align: center;
+	border-radius: 30px;
+	background: #bebebe;
+	border: none;
+	opacity: 0.3;
+	outline: none;
+	color: white;
+	font-weight: bold;
 }
 
-.left {
-	left:5px;
+.main #top #slider button:hover {
+	opacity: 0.8;
 }
-.right {
+
+.main #top #slider button:active {
+	opacity: 1;
+	background: #393738;
+	color: black;
+}
+
+
+.main #top #slider .left {
+	left:5px;
+	margin-left: 35px;
+}
+
+.main #top #slider .right {
 	right:5px;
+	margin-right: 35px;
 }
 
 /* MAIN FOOTER */
