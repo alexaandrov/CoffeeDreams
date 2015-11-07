@@ -16,12 +16,36 @@ var slider = {
 		this.frame++;
 		if(this.frame == this.slides.length) this.frame = 0;
 		this.set(this.slides[this.frame]);		
+	},
+	navigation: function(number) {
+		switch (number) {
+			case 0: 
+				this.frame = 0; 
+				this.set(this.slides[this.frame]);
+				break;
+			case 1: 
+				this.frame = 1; 
+				this.set(this.slides[this.frame]);
+				break;
+			case 2: 
+				this.frame = 2; 
+				this.set(this.slides[this.frame]);
+				break;
+			case 3: 
+				this.frame = 3; 
+				this.set(this.slides[this.frame]);
+				break;
+			case 4: 
+				this.frame = 4; 
+				this.set(this.slides[this.frame]);
+				break;
+		}
 	}
-	
 };
 window.onload = function() { // запуск слайдера после загрузки документа
+	var durationSlide = 9000;
 	slider.init();
 	setInterval(function() { // ставим пятисекундный интервал для перелистывания картинок
 		slider.right();
-	}, 5000);
+	}, durationSlide);
 };

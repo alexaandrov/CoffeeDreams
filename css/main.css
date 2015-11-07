@@ -275,6 +275,7 @@ a {
 	padding: 5px;
 	width: 90%;
 	height: 440px;
+
 	/*overflow: hidden;*/
 }
 
@@ -288,6 +289,9 @@ a {
 	background-position: center;
 	background-repeat: no-repeat;
 	border-radius: 8px;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
 	box-shadow: 0 0 12px rgba(0,0,0,0.4);
 	-webkit-box-shadow: 0 0 12px rgba(0,0,0,0.4);
 	-mox-box-shadow: 0 0 12px rgba(0,0,0,0.4);
@@ -295,9 +299,7 @@ a {
 }
 	
 
-.main #top #slider .buttons{
-	/*position: absolute;*/
-	/*top: 800px;*/
+.main #top #slider .buttons {
 	width: 25px;
 	height: 70px;
 	float: left;
@@ -306,26 +308,28 @@ a {
 	opacity: 0.7;
 	outline: none;
 	font-size: 70px;
-	color: black;
+	color: #A67B5B;
 }
 
 .main #top #slider .buttons:hover {
-	opacity: 1;
+	opacity: 0.8;
+	color: #5B392E;
 }
 
 .main #top #slider .buttons:active {
+	opacity: 1;
 	color: white;
 }
 
 .main #top #slider .left {
 	left:5px;
-	margin-top: 160px;
+	margin-top: 175px;
 	margin-left: 55px;
 }
 
 .main #top #slider .right {
 	margin-right: 75px;
-	margin-top: -260px;
+	margin-top: -235px;
 	float: right;
 }
 
@@ -342,7 +346,7 @@ a {
 	list-style-type: none;
 	font-size: 17px;
 	padding-left: 3px;
-	color: white;
+	color: #A67B5B;
 	cursor: pointer;
 	opacity: 0.5;
 
@@ -350,11 +354,11 @@ a {
 
 .main #top #slider .navigation li:hover {
 	opacity: 1;
-	color: #6F4E37;
+	color: #5B392E;
 }
 
 .main #top #slider .navigation li:active {
-	color: #4B3621;
+	color: #301A0B;
 }
 
 
