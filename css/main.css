@@ -275,6 +275,7 @@ a {
 	padding: 5px;
 	width: 90%;
 	height: 440px;
+	/*overflow: hidden;*/
 }
 
 .main #top #slider #scr {
@@ -294,7 +295,7 @@ a {
 }
 	
 
-.main #top #slider i {
+.main #top #slider .buttons{
 	/*position: absolute;*/
 	/*top: 800px;*/
 	width: 25px;
@@ -308,15 +309,13 @@ a {
 	color: black;
 }
 
-.main #top #slider i:hover {
+.main #top #slider .buttons:hover {
 	opacity: 1;
 }
 
-.main #top #slider i:active {
-	/*opacity: 1;*/
+.main #top #slider .buttons:active {
 	color: white;
 }
-
 
 .main #top #slider .left {
 	left:5px;
@@ -325,12 +324,39 @@ a {
 }
 
 .main #top #slider .right {
-	/*right:5px;*/
-	/*margin-right: 35px;*/
 	margin-right: 75px;
 	margin-top: -260px;
 	float: right;
 }
+
+.main #top #slider .navigation {
+	margin-top: -50px;
+	padding-right: 50px;
+	display: block;
+	text-align: center;
+	cursor: default;
+}
+
+.main #top #slider .navigation li {
+	display: inline-block;
+	list-style-type: none;
+	font-size: 17px;
+	padding-left: 3px;
+	color: white;
+	cursor: pointer;
+	opacity: 0.5;
+
+}
+
+.main #top #slider .navigation li:hover {
+	opacity: 1;
+	color: #6F4E37;
+}
+
+.main #top #slider .navigation li:active {
+	color: #4B3621;
+}
+
 
 .main #top .block2 {
 	width: 30%;

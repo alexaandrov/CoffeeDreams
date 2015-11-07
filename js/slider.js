@@ -17,6 +17,7 @@ var slider = {
 		if(this.frame == this.slides.length) this.frame = 0;
 		this.set(this.slides[this.frame]);		
 	}
+	
 };
 window.onload = function() { // запуск слайдера после загрузки документа
 	slider.init();
