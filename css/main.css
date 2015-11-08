@@ -113,8 +113,8 @@ a {
 	width: 100%;
 	display: block;
 	max-width: 1280px;
+	min-width: 860px;
 	position: absolute;
-	min-width: 850px;
 }
 
 .header .logo {
@@ -124,7 +124,7 @@ a {
 .header .logo .img {
 	width: 350px;
 	height: 85px;
-	margin: 45px 0px;
+	margin: 20px 0px;
 	opacity: 0.9;
 	background-image: url(../img/header-logo/header-logo.png);
 	background-size: 100% 75px;
@@ -149,7 +149,7 @@ a {
 .header .nav-menu {
 	display: table-cell;
 	float: right;
-	margin-top: 50px;
+	margin-top: 20px;
 	padding: 0;
 	list-style-type: none;
 }
@@ -204,13 +204,21 @@ a {
 	background-position: center;
 	background-size: 100% 1000px;
 	width: 100%;
-	height: 1000px; 
+	height: 950px; 
+}
+
+.main #top .wrapper {
+	overflow: hidden;
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1560px;
+	min-width: 860px;
 }
 
 .main #top .buy {
 	width: 350px;
-	margin-top: 200px;
-	margin-left: 45%;
+	margin-top: 150px;
+	margin-left: 20%;
 }
 
 .main #top .buy .h2-info {
@@ -259,19 +267,15 @@ a {
 	background: #5B392E;
 }
 
+.main #top .left-block {
 
-.main #top .wrapper {
-	overflow: hidden;
-}
-
-.main #top .block {
-	width: 60%;
+	width: 50%;
 	float: left;
+	margin-left: 0px;
 }
 
 .main #top #slider {
 	margin-top: 20px;
-	margin-left: 15%;
 	padding: 5px;
 	width: 90%;
 	height: 440px;
@@ -306,17 +310,20 @@ a {
 	opacity: 0.7;
 	outline: none;
 	font-size: 70px;
-	color: #A67B5B;
+	color: black;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	-webkit-transition: all 0.2s ease-out;
 }
 
 .main #top #slider .buttons:hover {
 	opacity: 0.8;
-	color: #5B392E;
+	color: white;
 }
 
 .main #top #slider .buttons:active {
 	opacity: 1;
-	color: white;
+	color: black;
 }
 
 .main #top #slider .left {
@@ -347,26 +354,25 @@ a {
 	color: #A67B5B;
 	cursor: pointer;
 	opacity: 0.5;
-
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
 }
 
-.main #top #slider .navigation li:hover {
-	opacity: 1;
-}
 
-.main #top .block2 {
-	width: 30%;
+.main #top .right-block {
+	width: 33%;
 	float: left;
-	margin-top: 200px;
+	margin-top: 150px;
 }
 
 .main #top .bork {
 	background-image: url(../img/top/bork.png);
 	background-repeat: no-repeat;
-	background-size: 100% 600px;
-	height: 600px;
+	background-size: 100% 650px;
+	height: 650px;
 	float: right;
-	/*margin-right: -120px;*/
+	margin-right: 5%;/
 }
 
 
@@ -376,6 +382,7 @@ a {
 	background-color: #262626;
 	opacity: 1;
 	overflow: auto;
+	height: 800px;
 }
 
 .main #about .info {
@@ -386,22 +393,22 @@ a {
 .main #about .bork {
 	background-image: url(../img/about/bork.png);
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: 100% 750px;
 	width: 40%;
-	height: 900px;
+	height: 750px;
 	float: left;
 
 }
 
 .main #about .info {
-	width: 50%;
+	width: 55%;
 	float: left;
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
 
 .main #about .info h2 {
-	margin-top: 80px;
+	margin-top: 30px;
 	font-size: 60px;
 	color: white;
 }
@@ -421,7 +428,7 @@ a {
 .main #video-blog {
 	width: 100%;
 	overflow: hidden;
-	height: 1000px;
+	height: 800px;
 	background-image: url(../img/main-bg.jpg);
 	background-position: center;
 	background-attachment: fixed;
@@ -429,32 +436,64 @@ a {
 }
 
 .main #video-blog .wrapper {
-	max-width: 900px;
+	max-width: 820px;
 	margin: 0 auto;
 	padding: 0;
 }
 
-.main #video-blog {
+.main #video-blog h2 {
 	font-size: 70px;
 	text-align: center;
-	padding-top: 50px;
+	padding-top: 25px;
 	color: white;
 }
 
 .main #video-blog .border {
+	background-image: url(../img/how-we-work/5.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
 	border-radius: 15px;
 	border: 15px solid black;
-	height: 520px;
-	margin-top: 100px;
+	height: 530px;
+	margin-top: 25px;
 	overflow: hidden;
 	box-shadow: 0px 20px 50px rgba(1,0,0,1);
-	/*-webkit-box-shadow: 0 0 12px rgba(0,0,0,0.4);
-	-mox-box-shadow: 0 0 12px rgba(0,0,0,0.4);
-	filter: progid:DXImageTransform.Microsoft.shadow(direction=120, color=#000000, strength=10);*/
+	-webkit-box-shadow: 0px 20px 50px rgba(1,0,0,1);
+	-mox-box-shadow: 0px 20px 50px rgba(1,0,0,1);
+	filter: progid:DXImageTransform.Microsoft.shadow(direction=120, color=#000000, strength=10);
 }
 
 .main #video-blog iframe {
-	margin: auto;
+	margin: 0 auto;
+	margin-top: -60px;
+}
+
+.main #video-blog p {
+	z-index: 101;
+	font-size: 50px;
+	text-align: center;
+	color: white;
+	margin-top: -70px;
+	cursor: default;
+	-moz-transition: all 0.6s ease-out;
+	-o-transition: all 0.6s ease-out;
+	-webkit-transition: all 0.6s ease-out;
+}
+
+.main #video-blog p:hover {
+	color: #CEAE82;
+}
+
+.main #video-blog i:hover {
+	-moz-transition: all 0.6s ease-out;
+	-o-transition: all 0.6s ease-out;
+	-webkit-transition: all 0.6s ease-out;
+	color: #A67B5B;
+}
+
+.main #video-blog i {
+	font-size: 45px;
+	padding-right: 5px;
 }
 
 /*FONT*/
@@ -511,9 +550,18 @@ a {
 	color: white;
 }
 
+.main #capabilities {
+	background-image: url(../img/main-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 800px;
+	width: 100%;
+	height: 800px; 
+}
+
 .main #map {
 	width: 100%;
-	height: 800px;
+	height: 750px;
 }
 
 .main #map .wrapper {
