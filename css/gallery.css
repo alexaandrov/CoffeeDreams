@@ -80,6 +80,7 @@ body{margin:0px; padding:0px;}
 	background:url(../gallery/empty.gif); /* stupid ie needs a background value to understand hover area */
 }
 
+
 #outer_container{
 	position:relative; 
 	padding:0; 
@@ -109,6 +110,15 @@ body{margin:0px; padding:0px;}
 
 #outer_container .thumbScroller .content div a{
 	display:block; padding:5px;
+}
+
+#outer_container .thumbScroller .content div a:hover {
+	-moz-transition: all 0.6s ease-out;
+	-o-transition: all 0.6s ease-out;
+	-webkit-transition: all 0.6s ease-out;
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
 }
 
 .nextImageBtn, .prevImageBtn {
