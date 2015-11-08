@@ -40,7 +40,7 @@
 
 .watches #point {
 	position:relative; 
-	bottom:6px; 
+	bottom:25px; 
 	-moz-animation:mymove 1s ease infinite; 
 	-webkit-animation:mymove 1s ease infinite; 
 	padding-left:10px; 
