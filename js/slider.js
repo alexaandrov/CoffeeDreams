@@ -8,6 +8,7 @@ var slider = {
 	},
 	changeCurrentNavigColor: function() {
 		document.getElementById("n" + this.lastFrame).style.color = "#A67B5B";
+		document.getElementById("n" + this.lastFrame).style.opacity = "0.5";
 		document.getElementById("n" + this.frame).style.color = "white";
 		document.getElementById("n" + this.frame).style.opacity = "1";
 		this.lastFrame = this.frame;

@@ -352,11 +352,6 @@ a {
 
 .main #top #slider .navigation li:hover {
 	opacity: 1;
-	color: #5B392E;
-}
-
-.main #top #slider .navigation li:active {
-	color: #301A0B;
 }
 
 .main #top .block2 {
@@ -366,7 +361,7 @@ a {
 }
 
 .main #top .bork {
-	background-image: url(../img/top/bork2.png);
+	background-image: url(../img/top/bork.png);
 	background-repeat: no-repeat;
 	background-size: 100% 600px;
 	height: 600px;
