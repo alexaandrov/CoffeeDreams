@@ -551,16 +551,6 @@ a {
 	color: white;
 }
 
-.main #capabilities {
-	background-image: url(../img/main-bg.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
-	background-size: 100% 1000px;
-	width: 100%;
-	height: 800px; 
-}
-
 .main #map {
 	width: 100%;
 	height: 750px;
