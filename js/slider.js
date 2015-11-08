@@ -1,8 +1,16 @@
 var slider = {
 	slides:['./img/top/slider/1.jpg','./img/top/slider/2.jpg','./img/top/slider/3.jpg','./img/top/slider/4.jpg','./img/top/slider/5.jpg'],
 	frame:0, // текущий кадр для отбражения - индекс картинки из массива
+	lastFrame:0,
 	set: function(image) { // установка нужного фона слайдеру
 		document.getElementById("scr").style.backgroundImage = "url("+image+")";
+		this.changeCurrentNavigColor();
+	},
+	changeCurrentNavigColor: function() {
+		document.getElementById("n" + this.lastFrame).style.color = "#A67B5B";
+		document.getElementById("n" + this.frame).style.color = "white";
+		document.getElementById("n" + this.frame).style.opacity = "1";
+		this.lastFrame = this.frame;
 	},
 	init: function() { // запуск слайдера с картинкой с нулевым индексом
 		this.set(this.slides[this.frame]);
@@ -18,7 +26,7 @@ var slider = {
 		this.set(this.slides[this.frame]);		
 	},
 	navigation: function(number) {
-		switch (number) {
+		switch(number) {
 			case 0: 
 				this.frame = 0; 
 				this.set(this.slides[this.frame]);
@@ -39,6 +47,11 @@ var slider = {
 				this.frame = 4; 
 				this.set(this.slides[this.frame]);
 				break;
+		}
+	},
+	check: function() {
+		if(this.frame == 0) {
+			console.log("0");
 		}
 	}
 };
