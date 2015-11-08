@@ -78,7 +78,7 @@ h2 {
 } 
 
 h3 {
-	font-family: Caviar, Arial;
+	font-family: CaviarBold, Arial;
 	padding: 0;
 	margin: 0;
 }
@@ -548,9 +548,9 @@ a {
 }
 
 .main #write-us form {
-	margin-top: 200px;
+	margin-top: 50px;
 	width: 100%;
-	background-image: url(../img/write-us-bg.jpg);
+	background-image: url(../img/4.jpg);
 	background-position: center;
 	border-radius: 5px;
 	opacity: 0.9;
@@ -566,8 +566,9 @@ a {
 .main #write-us form h3 {
 	color: white;
 	text-align: center;
-	font-size: 35px;
+	font-size: 30px;
 	padding: 20px;
+	text-shadow:0 2px 5px #5B392E; 
 	/*margin: 20px;*/
 }
 
@@ -586,7 +587,7 @@ a {
 .main #write-us input[type="submit"] {
 	/*color: #099ffe;*/
 	color: #fff;
-	background: #0068ab;
+	background: #6F4E37;
     border-radius: 4px;
 	width: 87%;
 	padding: 20px 0px;
@@ -606,12 +607,13 @@ a {
 }
 
 .main #write-us input[type="submit"]:hover {
-	background-color: #02588f;
+	background-color: #CEAE82;
 }
 
 .main #write-us input[type="submit"]:active {
-	background-color: #002740;
+	background-color: #5B392E;
 }
+
 
 /* MAIN FOOTER */
 .main-footer {

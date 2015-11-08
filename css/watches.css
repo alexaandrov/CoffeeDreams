@@ -1,0 +1,61 @@
+.watches {
+	margin-top: 70px;
+}
+
+.watches .container {
+	margin: 0 auto; 
+	overflow: hidden;
+}
+
+.watches .clock {
+	width: 800px; 
+	margin:0 auto; 
+	padding: 10px; 
+	color:#fff; 
+}
+
+.watches #Date {
+	font-family: Caviar, Calibri, sans-serif; 
+	font-size: 45px; 
+	text-align: center; 
+	text-shadow:0 0 5px #A67B5B; 
+}
+
+.watches ul {
+	width: 800px; 
+	margin: 0 auto;
+	padding:0px; 
+	margin-top: 10px;
+	list-style:none; 
+	text-align:center; 
+}
+
+.watches ul li {
+	display:inline; 
+	font-size:8em; 
+	text-align:center; 
+	font-family: Caviar, Calibri, sans-serif; 
+	text-shadow:0 0 5px #A67B5B; 
+}
+
+.watches #point {
+	position:relative; 
+	bottom:6px; 
+	-moz-animation:mymove 1s ease infinite; 
+	-webkit-animation:mymove 1s ease infinite; 
+	padding-left:10px; 
+	padding-right:10px; 
+}
+
+@-webkit-keyframes mymove {
+	0% {opacity:1.0; text-shadow:0 0 20px #5B392E;}
+	50% {opacity:0; text-shadow:none; }
+	100% {opacity:1.0; text-shadow:0 0 20px #5B392E; }	
+}
+
+
+@-moz-keyframes mymove {
+	0% {opacity:1.0; text-shadow:0 0 20px #00c6ff;}
+	50% {opacity:0; text-shadow:none; }
+	100% {opacity:1.0; text-shadow:0 0 20px #00c6ff; }	
+}
