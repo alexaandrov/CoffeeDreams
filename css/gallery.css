@@ -5,15 +5,22 @@ html,body{height:100%;}
 body{margin:0px; padding:0px;}
 
 #gallery {
+	margin: 0;
+	padding: 0;
 	width: 100%;
 	height: 1000px;
+	background-image: url(../img/main-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: 100% 1000px;
 }
 
 #toolbar {
 	border:none;
 }
 
-#img_title{
+#img_title {
 	position:relative; 
 	width: 98%;
 	z-index:3; 
@@ -28,42 +35,31 @@ body{margin:0px; padding:0px;}
 	text-transform:uppercase;
 }
 
-#bg{
+#bg {
 	position:relative; 
 	z-index:1; 
 	overflow:hidden; 
-	width:100%; 
-	height:100%;
-	background-image: url(../img/main-bg.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
-	background-size: 100% 1000px;
 	width: 100%;
-	height: 1000px; 
+	height: 100%; 
+	margin: 0;
+	padding: 0;
 }
 
 #bg img {
-	padding-top: 95px;
+	padding: 0;
+	margin: 0;
 	height: 110%;
 }
 
-#bgimg{
+#bgimg {
 	display:none; 
 	-ms-interpolation-mode: bicubic;
 }
 
-/*.pr-wrapp {
-	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
-
-}*/
-
 #preloader{
 	margin: 0 auto;
 	margin-top: -930px;
-	opacity: 0.7;
+	opacity: 0.4;
 	border-radius: 20px;
 	position:relative; 
 	padding-bottom: 100px;
@@ -71,6 +67,9 @@ body{margin:0px; padding:0px;}
 	width:32px; 
 	padding: 20px;
 	background:#000;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
 }
 #thumbnails_wrapper {
 	margin-top: -400px;
@@ -104,9 +103,10 @@ body{margin:0px; padding:0px;}
 #outer_container .thumbScroller .content div{
 	margin:5px; height:100%;
 }
-#outer_container .thumbScroller img{
-	border:5px solid #fff;
+#outer_container .thumbScroller img {
+	border: 5px solid #fff;
 }
+
 #outer_container .thumbScroller .content div a{
 	display:block; padding:5px;
 }
@@ -151,12 +151,3 @@ body{margin:0px; padding:0px;}
 
 .prevImageBtn{
 	background:#000 url(../gallery/prevImgBtn.png) center center no-repeat;}
-
-
-.rabota {
-	z-index: 10;
-	position: relative;
-	background: red;
-	height: 1000px;
-	width: 100%;
-}
