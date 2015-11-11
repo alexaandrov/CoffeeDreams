@@ -198,7 +198,6 @@ a {
 }
 
 .main #top {
-	margin-top: 0px;
 	background-image: url(../img/main-bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -216,9 +215,9 @@ a {
 }
 
 .main #top .buy {
-	width: 350px;
+	width: 70%;
 	margin-top: 150px;
-	margin-left: 20%;
+	margin-left: 10%;
 }
 
 .main #top .buy .h2-info {
@@ -237,18 +236,18 @@ a {
 	font-weight: bold;
 	font-size: 45px;
 	text-shadow: rgb(13, 6, 1) -4px 2px 1px;
-	width: 350px;
+	width: 100%;
 }
 
 .main #top .buy a.button {
-	display: inline-block;
+	display: block;
 	color: #fff;
 	text-decoration: none;
+	text-align: center;
 	user-select: none;
 	background: #6F4E37;
-	padding: 25px 100px;
+	padding: 40px 18%;
 	margin-top: 20px;
-	margin-left: 20px;
 	outline: none;
 	border-radius: 12px;
 	font-family: Marck, Arial;
@@ -268,7 +267,6 @@ a {
 }
 
 .main #top .left-block {
-
 	width: 50%;
 	float: left;
 	margin-left: 0px;
@@ -281,7 +279,7 @@ a {
 	height: 440px;
 }
 
-.main #top #slider #scr {
+.main #slider #scr {
 	margin: 20px auto;
 	width: 90%;
 	height: 380px;
@@ -372,7 +370,7 @@ a {
 	background-size: 100% 650px;
 	height: 650px;
 	float: right;
-	margin-right: 5%;/
+	margin-right: 5%;
 }
 
 
@@ -561,6 +559,24 @@ a {
 }
 
 @media screen and (max-width: 760px) {
+	.header {
+		display: none;
+	}
+	
+	.main #top .buy {
+		margin-top: 30px;
+	}
+
+	.main #top .right-block {
+		display: none;
+		width: 0%;
+	}
+	
+	.main #top .left-block {
+		width: 100%;
+	}
+
+
 	.main #how-we-work {
 		height: auto;
 		background-image: none;
