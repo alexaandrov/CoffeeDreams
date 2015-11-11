@@ -101,6 +101,7 @@ a {
 	color: #bcd9ff;
 }
 
+
 /* MAIN HEADER */
 .header {
 	width: 100%;
@@ -379,7 +380,7 @@ a {
 	background-image: url(../img/about/bg.jpg);
 	background-color: #262626;
 	opacity: 1;
-	overflow: auto;
+	overflow: hidden;
 	height: 800px;
 }
 
@@ -407,7 +408,7 @@ a {
 
 .main #about .info h2 {
 	margin-top: 30px;
-	font-size: 60px;
+	font-size: 40px;
 	color: white;
 }
 
@@ -550,52 +551,6 @@ a {
 	text-align: center;
 	color: white;
 	font-size: 28px;
-}
-
-@media (max-width: 1200px) {
-	.main #how-we-work .block p {
-		font-size: 22px;
-	}
-}
-
-@media screen and (max-width: 760px) {
-	.header {
-		display: none;
-	}
-	
-	.main #top .buy {
-		margin-top: 30px;
-	}
-
-	.main #top .right-block {
-		display: none;
-		width: 0%;
-	}
-	
-	.main #top .left-block {
-		width: 100%;
-	}
-
-
-	.main #how-we-work {
-		height: auto;
-		background-image: none;
-	}
-
-	.main #how-we-work .block {
-		float: none;
-		width: 100%;
-	}
-
-	.main #how-we-work .block p {
-		font-size: 28px;
-	}
-}
-
-@media screen and (max-width: 480px) {
-	.main #how-we-work .block p {
-		font-size: 20px;
-	}
 }
 
 .main #map {
@@ -772,12 +727,7 @@ a {
 	margin-top: -25px;
 }
 
-@media(max-width: 1000px) {
-	.main-footer .footer-main > ul > li {
-		margin-top: 12px;
-		margin-bottom: 30px;
-	}
-}
+/* MEDIA */
 
 @media (max-width: 550px) {
 	.main-footer {
@@ -801,3 +751,110 @@ a {
 		width: 45%;
 	}
 }
+
+@media (max-width: 960px) {
+	.header .logo .img {
+		width: 260px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.main #how-we-work .block p {
+		font-size: 22px;
+	}
+
+	.main #about p {
+		font-size: 24px;
+	}
+
+	.main #about .info h2 {
+		margin-top: 10px;
+		font-size: 35px;
+		color: white;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.header {
+		display: none;
+	}
+	
+	.main #top .buy {
+		margin-top: 30px;
+	}
+
+	.main #top .right-block {
+		display: none;
+		width: 0%;
+	}
+	
+	.main #top .left-block {
+		width: 100%;
+	}
+	
+	.main #about .bork {
+		display: none;
+	}
+	
+	.main #about .info {
+		width: 100%;
+		float: none;
+	}
+
+	.main #about p {
+		font-size: 28px;
+		padding-left: 0px;
+	}
+
+	.main #about .info h2 {
+		margin-top: 30px;
+		font-size: 35px;
+		color: white;
+	}
+	
+	.main #how-we-work {
+		height: auto;
+		background-image: none;
+	}
+
+	.main #how-we-work .block {
+		float: none;
+		width: 100%;
+	}
+
+	.main #how-we-work .block p {
+		font-size: 28px;
+	}
+}
+
+
+@media screen and (max-width: 480px) {
+	.main #how-we-work .block p {
+		font-size: 20px;
+	}
+
+	.main #about p {
+		font-size: 20px;
+	}
+
+	.main #about .info h2 {
+		margin-top: 10px;
+		font-size: 30px;
+		color: white;
+	}
+
+	.main #video-blog h2 {
+		font-size: 45px;
+	}
+
+	.main #video-blog p {
+		font-size: 25px;
+	}
+}
+@media(max-width: 1000px) {
+	.main-footer .footer-main > ul > li {
+		margin-top: 12px;
+		margin-bottom: 30px;
+	}
+}
+
