@@ -877,6 +877,7 @@ a {
 		font-size: 25px;
 	}
 }
+
 @media(max-width: 1000px) {
 	.main-footer .footer-main > ul > li {
 		margin-top: 12px;

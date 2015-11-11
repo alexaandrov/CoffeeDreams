@@ -3,12 +3,13 @@
 }
 
 .watches .container {
+	width: 100%;
 	margin: 0 auto; 
 	overflow: hidden;
 }
 
 .watches .clock {
-	width: 800px; 
+	width: 100%; 
 	margin:0 auto; 
 	padding: 10px; 
 	color:#fff; 
@@ -22,7 +23,7 @@
 }
 
 .watches ul {
-	width: 800px; 
+	width: 100%;
 	margin: 0 auto;
 	padding:0px; 
 	margin-top: 10px;
@@ -58,4 +59,18 @@
 	0% {opacity:1.0; text-shadow:0 0 20px #00c6ff;}
 	50% {opacity:0; text-shadow:none; }
 	100% {opacity:1.0; text-shadow:0 0 20px #00c6ff; }	
+}
+
+@media (max-width: 760px) {
+	.watches #Date {
+		font-size: 30px;
+	}
+
+	.watches ul li {
+		font-size: 4em;
+	}
+
+	.watches #point {
+		bottom: 10px;
+	}
 }
