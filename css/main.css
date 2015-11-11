@@ -576,10 +576,10 @@ a {
 .main #write-us {
 	background-image: url(../img/main-bg.jpg);
 	background-repeat: no-repeat;
-	background-size: 100% 1000px;
+	background-size: 100% 1200px;
 	background-attachment: fixed;
 	width: 100%;
-	height: 800px;
+	height: 1000px;
 	overflow: hidden;
 }
 
@@ -621,23 +621,49 @@ a {
 .main #write-us input[type="text"] {
 	font-family: 'Comic Sans MS';
 	font-weight: bold;
-	width: 75%;
+	width: 94%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	color: #3d3d3d;
+    border-radius: 4px;
+	font-size: 100%;
+	padding: 15px 30px;
+	margin: 5px 0;
+	margin-left: 3%;
+	margin-right: 3%;
+    border: 0 solid black;
+}
+
+.main #write-us textarea[name="message"] {
+	font-family: 'Comic Sans MS';
+	font-weight: bold;
+	width: 94%;
+	  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 	color: #3d3d3d;
     border-radius: 4px;
 	font-size: 17px;
 	padding: 15px 30px;
-	margin: 4px 30px;
+	margin: 5px 0;
+	margin-left: 3%;
+	margin-right: 3%;
     border: 0 solid black;
 }
 
 .main #write-us input[type="submit"] {
-	/*color: #099ffe;*/
-	color: #fff;
+    	color: #fff;
 	background: #6F4E37;
     border-radius: 4px;
-	width: 87%;
+	width: 94%;
+	  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 	padding: 20px 0px;
-	margin: 10px 30px;
+	margin: 10px 0;
+	margin-left: 3%;
+	margin-right: 3%;
 	margin-bottom: 20px;
 	font-size: 17px;
 	/*padding: 15px 100%;*/
