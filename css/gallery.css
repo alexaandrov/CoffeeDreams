@@ -18,7 +18,7 @@
 	margin: -1000px 0;
 	z-index:3;
 	padding: 10px 0; 
-	background:url(../gallery/fs_img_g_bg.png); 
+	background:url(../img/gallery/fs_img_g_bg.png); 
 	color:#FFF; 
 	font-family:'Josefin Sans Std Light', 
 	arial, serif; 
@@ -72,7 +72,7 @@
 	position:relative; 
 	bottom:0; 
 	width:100%; 
-	background:url(../gallery/empty.gif); /* stupid ie needs a background value to understand hover area */
+	background:url(../img/gallery/empty.gif); /* stupid ie needs a background value to understand hover area */
 }
 
 .thumbScroller img {
@@ -89,7 +89,7 @@
 #outer_container .thumbScroller{
 	position:relative; 
 	overflow:hidden; 
-	background:url(../gallery/fs_img_g_bg.png);}
+	background:url(../img/gallery/fs_img_g_bg.png);}
 #outer_container .thumbScroller, #outer_container .thumbScroller .container, #outer_container .thumbScroller .content{
 	height:170px;
 }
@@ -156,7 +156,7 @@
 
 .nextImageBtn {
 	right:0; 
-	background:#000 url(../gallery/nextImgBtn.png) center center no-repeat;}
+	background:#000 url(../img/gallery/nextImgBtn.png) center center no-repeat;}
 
 .prevImageBtn{
-	background:#000 url(../gallery/prevImgBtn.png) center center no-repeat;}
+	background:#000 url(../img/gallery/prevImgBtn.png) center center no-repeat;}

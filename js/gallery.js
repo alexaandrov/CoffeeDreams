@@ -29,9 +29,9 @@ $prevImageBtn=$(".prevImageBtn");
 $(window).load(function() {
 	$toolbar.data("imageViewMode",$defaultViewMode); //default view mode
 	if($defaultViewMode=="full"){
-		$toolbar_a.html("<img src='./gallery/toolbar_n_icon.png' width='50' height='50'  />").attr("onClick", "ImageViewMode('normal');return false").attr("title", "Restore");
+		$toolbar_a.html("<img src='./img/gallery/toolbar_n_icon.png' width='50' height='50'  />").attr("onClick", "ImageViewMode('normal');return false").attr("title", "Restore");
 	} else {
-		$toolbar_a.html("<img src='./gallery/toolbar_fs_icon.png' width='50' height='50'  />").attr("onClick", "ImageViewMode('full');return false").attr("title", "Maximize");
+		$toolbar_a.html("<img src='./img/gallery/toolbar_fs_icon.png' width='50' height='50'  />").attr("onClick", "ImageViewMode('full');return false").attr("title", "Maximize");
 	}
 	ShowHideNextPrev($nextPrevBtnsInitState);
 	//thumbnail scroller
@@ -280,9 +280,9 @@ function ImageViewMode(theMode){
 	$toolbar.data("imageViewMode", theMode);
 	FullScreenBackground($bgimg,$bgimg.data("newImageW"),$bgimg.data("newImageH"));
 	if(theMode=="full"){
-		$toolbar_a.html("<img src='./gallery/toolbar_n_icon.png' width='50' height='50'  />").attr("onClick", "ImageViewMode('normal');return false").attr("title", "Restore");
+		$toolbar_a.html("<img src='./img/gallery/toolbar_n_icon.png' width='50' height='50'  />").attr("onClick", "ImageViewMode('normal');return false").attr("title", "Restore");
 	} else {
-		$toolbar_a.html("<img src='./gallery/toolbar_fs_icon.png' width='50' height='50'  />").attr("onClick", "ImageViewMode('full');return false").attr("title", "Maximize");
+		$toolbar_a.html("<img src='./img/gallery/toolbar_fs_icon.png' width='50' height='50'  />").attr("onClick", "ImageViewMode('full');return false").attr("title", "Maximize");
 	}
 }
 
