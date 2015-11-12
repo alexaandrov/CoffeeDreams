@@ -1,4 +1,3 @@
-
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans+Std+Light);
 #gallery {
 	margin: 0;
@@ -76,6 +75,10 @@
 	background:url(../gallery/empty.gif); /* stupid ie needs a background value to understand hover area */
 }
 
+.thumbScroller img {
+	width: 220px;
+	height: 138px;
+}
 
 #outer_container{
 	position:relative; 
