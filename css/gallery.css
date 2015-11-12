@@ -14,11 +14,12 @@
 }
 
 #img_title {
-	position:relative; 
-	width: 98%;
-	z-index:3; 
-	left:0px; 
-	padding:10px; 
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	margin: -1000px 0;
+	z-index:3;
+	padding: 10px 0; 
 	background:url(../gallery/fs_img_g_bg.png); 
 	color:#FFF; 
 	font-family:'Josefin Sans Std Light', 
