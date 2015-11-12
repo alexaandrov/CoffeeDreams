@@ -473,8 +473,11 @@ a {
 	font-size: 50px;
 	text-align: center;
 	color: white;
-	margin-top: -70px;
+	padding: 8px 0;
+	margin-top: -75px;
 	cursor: default;
+	border-radius: 15px;
+	background-color: black;
 	-moz-transition: all 0.6s ease-out;
 	-o-transition: all 0.6s ease-out;
 	-webkit-transition: all 0.6s ease-out;
