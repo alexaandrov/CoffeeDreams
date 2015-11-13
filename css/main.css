@@ -4,10 +4,6 @@ body {
 	min-width: 250px;
 }
 
-img {
-	pointer-events: none;
-}
-
 /* FONTS AND TITLES */
 
 /* font-family: "CaviarDreamsRegular"; */
@@ -582,7 +578,7 @@ a {
 	margin-bottom: 20px;
 }
 
-.main #how-we-work .blocks .photo {
+.main #how-we-work .blocks .photo img {
 	width: 100%;
 	height: 45%;
 	border-radius: 1px;
