@@ -570,7 +570,7 @@ a {
 }
 
 .main #how-we-work .block {
-	width: 32%;
+	width: 31.5%;
 	height: 600px;
 	float: left;
 	margin-top: 0px;
@@ -836,7 +836,7 @@ a {
 
 @media (max-width: 1200px) {
 	.main #how-we-work .block p {
-		font-size: 22px;
+		font-size: 21px;
 	}
 
 	.main #about p {
