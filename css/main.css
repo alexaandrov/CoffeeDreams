@@ -600,23 +600,43 @@ a {
 }
 
 .main #map {
+	background-image: url(../img/how-we-work/bg.jpg);
+	background-size: 100% 800px;
+	background-color: #262626;
 	width: 100%;
-	height: 750px;
+	height: 800px;
 }
 
 .main #map .wrapper {
-	max-width: 400px;
+	max-width: 800px;
 	width: 100%;
 	margin: 0 auto;
 }
 
 .main #map h2 {
-	font-size: 80px;
+	font-size: 70px;
 	font-weight: bold;
 	text-align: center;
-	position: absolute;
 	z-index: 101;
-	color: black;
+	color: white;
+	padding-top: 40px;
+}
+
+.main #map .border {
+	background-image: url(../img/yandex.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	border-radius: 15px;
+	border: 15px solid black;
+	height: 530px;
+	margin: 0 200px;
+	margin-top: 30px;
+	overflow: hidden;
+	box-shadow: 0px 20px 50px rgba(1,0,0,1);
+	-webkit-box-shadow: 0px 20px 50px rgba(1,0,0,1);
+	-mox-box-shadow: 0px 20px 50px rgba(1,0,0,1);
+	filter: progid:DXImageTransform.Microsoft.shadow(direction=120, color=#000000, strength=10);
 }
 
 .main #write-us {
@@ -845,11 +865,20 @@ a {
 		font-size: 35px;
 		color: white;
 	}
+
 }
 
 @media screen and (max-width: 760px) {
 	.header {
 		display: none;
+	}
+	.main #map .border {
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+
+	.main #map h2 {
+		font-size: 40px;
 	}
 	
 	.main #top .buy {
@@ -897,6 +926,8 @@ a {
 	.main #how-we-work .block p {
 		font-size: 28px;
 	}
+
+	
 }
 
 
