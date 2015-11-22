@@ -9,26 +9,18 @@
     <link rel="stylesheet" href="./css/watches.css">
     <link rel="stylesheet" href="./css/gallery.css">
     <link rel="stylesheet" href="./css/lightbox.css">
+    <link rel="stylesheet" media="all" href="css/animate.css">
 	<script src="./js/jquery.min.js"></script>
 	<script src="./js/jquery.easing.1.3.js"></script>
 	<script src="./js/watches.js"></script>
 	<script src="./js/slider.js"></script>
 	<script src="./js/gallery.js"></script>
-	
+	<script src="./js/wow.min.js"></script>
+	<script>new WOW().init();</script>
 </head>
 <body>
 	<header class="header">
-		<div class="mini">
-			<nav class="mini-menu">
-				<ul>
-					<li><a href="#">Главная</a></li>
-					<li><a href="#">О нас</a></li>
-					<li><a href="#">О кофе</a></li>
-					<li><a href="#">Рецепты</a></li>
-				</ul>
-			</nav>
-		</div>
-		<div class="wrapper">
+		<div class="wrapper bounceInUp wow">
 			<div class="logo"><i class="main-header-logo"><a href="#"><div class="img"></div></a></i>
 			</div>
 			<nav class="navigation">
@@ -57,6 +49,7 @@
 	</nav>
 
 	<main class="main">
+		<div class="logo" ></div>
 			<div class="form-buy" id="form-buy">
 				<div class="wrapper">
 					<div class="quit" id="quit"><i class="fa fa-times fa-3x"></i></div>
@@ -77,14 +70,15 @@
 			</div>
 
 			<div class="section" id="top">
+
 				<div class="wrapper">
 					<div class="left-block">
-						<div class="buy">
+						<div class="buy bounceInLeft wow">
 							<h2 class="h2-info">Bork C805</h2>
 							<p class="text">Ваша домашняя кофейня.</p>
 							<input type="submit" value="Купить" id="buy"></a>
 						</div>
-						<div id="slider">
+						<div class="bounceInLeft wow" id="slider">
 							<i class="buttons left fa fa-chevron-left" onclick="slider.left();"></i>
 							<div id="scr"></div>
 							<ul class="navigation">
@@ -97,24 +91,24 @@
 							<i class="buttons right fa fa-chevron-right" onclick="slider.right();"></i>
 						</div>
 					</div>
-					<div class="right-block bork"></div>
+					<div class="right-block bork bounceInRight wow"></div>
 					
 				</div>
 			</div>
-			
-			<div class="section" id="about">
+
+			<div class="section fadeInDown wow" id="about">
 				<div class="wrapper">
 					<div class="bork"></div>
 					<div class="info">
-						<h2 class="h2-good"><i class="fa fa-gg"></i>Коротко о главном</h2>
-						<p>BORK C805 - это ваша домашняя кофейня. 2 бойлера, 45 степеней помола, 9 степеней автоматической утрамбовки, контроль температуры воды и пара с точностью до градуса, - домашний кофе еще никогда не готовился так быстро и не был таким вкусным!</p>
-						<h2 class="h2-good"><i class="fa fa-gg"></i>На любой вкус</h2>
-						<p>Многие согласятся, что капучино, латте, американо или эспрессо - это лучшее начало дня. Любой из этих видов кофе, а также многие другие, Вы сможете приготовить у себя дома с помощью кофейной станции BORK C805.</p>
+						<h2 class="h2-good fadeInLeft wow"><i class="fa fa-gg"></i>Коротко о главном</h2>
+						<p class="slideInLeft wow">BORK C805 - это ваша домашняя кофейня. 2 бойлера, 45 степеней помола, 9 степеней автоматической утрамбовки, контроль температуры воды и пара с точностью до градуса, - домашний кофе еще никогда не готовился так быстро и не был таким вкусным!</p>
+						<h2 class="h2-good fadeInRight wow"><i class="fa fa-gg"></i>На любой вкус</h2>
+						<p class="slideInRight wow">Многие согласятся, что капучино, латте, американо или эспрессо - это лучшее начало дня. Любой из этих видов кофе, а также многие другие, Вы сможете приготовить у себя дома с помощью кофейной станции BORK C805.</p>
 					</div>
 				</div>
 			</div>	
 
-			<div class="section" id="video-blog">
+			<div class="section fadeInUp wow" id="video-blog">
 				<div class="wrapper">
 					<h2>Убедитесь сами</h2>
 					<div class="border">
@@ -127,32 +121,32 @@
 				<div class="wrapper">
 					<h2 class="h2-good">Почему Bork C805?</h2>
 					<div class="blocks">
-						<div class="block">
+						<div class="block bounceInLeft wow">
 							<a class="photo" href="./img/how-we-work/1.jpg" data-lightbox="example-set" data-title="Создавайте свой кофе."><img class="example-image" src="./img/how-we-work/1.jpg" alt="Image"/></a>
 						<hr>
 						<p>Возможность программирования. Создайте кофе по своему авторскому рецепту, задав желаемую степень помола, плотность утрамбовки, количество воды при экстракции и консистенцию молочной пенки.</p>
 						</div>
-						<div class="block">
+						<div class="block bounceInDown wow">
 							<a class="photo" href="./img/how-we-work/2.jpg" data-lightbox="example-set" data-title="Двойной режим бойлера."><img class="" src="./img/how-we-work/2.jpg" alt="Image"/></a>
 							<hr>
 							<p>Благодаря двум мощным бойлерам приготовить кофе и вспенить молоко паром можно одновременно, экономя время.</p>
 						</div>
-						<div class="block">
+						<div class="block bounceInRight wow">
 							<a class="photo" href="./img/how-we-work/3.jpg" data-lightbox="example-set" data-title="Регулируйте температуру."><img class="" src="./img/how-we-work/3.jpg" alt="Image"/></a>
 							<hr>
 							<p>Встроенные датчики контролируют температуру воды и пара с точностью до градуса. Регулируйте температуру для оптимальной экстракции кофе разных сортов и создавайте молочную пенку разной текстуры.</p>
 						</div>
-						<div class="block">
+						<div class="block bounceInLeft wow">
 							<a class="photo" href="./img/how-we-work/4.jpg" data-lightbox="example-set" data-title="Автоподогреватель."><img class="" src="./img/how-we-work/4.jpg" alt="Image"/></a>
 							<hr>
 							<p>Панель для подогрева чашек начинает нагреваться автоматически сразу после включения кофейной станции и позволяет предварительно прогреть чашки для поддержания оптимальной температуры кофе после заваривания.</p>
 						</div>
-						<div class="block">
+						<div class="block bounceInUp wow">
 							<a class="photo" href="./img/how-we-work/5.jpg" data-lightbox="example-set" data-title="5 степеней помола."><img class="" src="./img/how-we-work/5.jpg" alt="Image"/></a>
 							<hr>
 							<p>Кофемолка с 45 степенями помола. Необходимое количество зерен для помола кофейная станция определит автоматически. Меняя степени помола, можно экспериментировать со вкусом любимого напитка.</p>
 						</div>
-						<div class="block">
+						<div class="block bounceInRight wow">
 							<a class="photo" href="./img/how-we-work/6.jpg" data-lightbox="example-set" data-title="Интелектуальная трубка капучинатора."><img class="" src="./img/how-we-work/6.jpg" alt="Image"/></a>
 							<hr>
 							<p>Конструкция трубки-капучинатора позволяет не придерживать кувшин при вспенивании молока, а после возвращения ее в исходное положение автоматически срабатывает функция самоочистки.</p>
@@ -161,7 +155,7 @@
 				</div>
 			</div>
 	
-			<div class="section" id="gallery">
+			<div class="section swing wow" id="gallery">
 				<div id="bg"><a href="#" class="nextImageBtn" title="next"></a><a href="#" class="prevImageBtn" title="previous"></a><img src="./img/gallery/photos/8.jpg" width="1620" height="1080" alt="Beatufil" title="Beautiful" id="bgimg" /></div>
 				<div class="preloader-wrap"><div id="preloader"><img src="./img/gallery/ajax-loader_dark.gif" width="32" height="32" /></div></div>
 				<div class="title_wrap">><div id="img_title"></div></div>
@@ -201,14 +195,14 @@
 	</div>
 
 			<div class="section" id="map">
-				<div class="wrapper"><h2>Наш офис</h2></div>
-				<div class="border">
+				<div class="wrapper rubberBand wow"><h2>Наш офис</h2></div>
+				<div class="border swing wow">
 						<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=zAC04BeeDj2r8PoQ9zyeEsF7Q3uIpF_Q&width=100%&height=100%&lang=ru_RU&sourceType=constructor"></script>
 				</div>
 			</div>
 
 			<div class="section" id="write-us">
-					<div class="watches">
+					<div class="watches flash wow">
 						<div class="clr"></div>
 						<div class="container">
 							<div class="clock">
@@ -223,7 +217,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="wrapper">
+					<div class="wrapper wobble wow">
 						<form action="action.php" method="post" type="text" name="get-form">
 							<h3>Самое время написать нам!</h3>
 							<input type="text" placeholder="Имя" name="nick">
