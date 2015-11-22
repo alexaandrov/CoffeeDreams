@@ -67,9 +67,9 @@
 							<p class="price">199 990<i class="fa fa-rub fa-1x"></i></p>
 						</div>
 					</div>
-					<form> 
-						<input type="text" placeholder="Имя" maxlength="20" name="nick">
-						<input type="text" placeholder="Телефон" maxlenght="11" name="phone">
+					<form name="issues" onSubmit="checkIssues(); return(false);"> 
+						<input type="text" placeholder="Имя" maxlength="20" name="nick" value="">
+						<input type="text" placeholder="Телефон" maxlenght="11" name="phone" value="">
 						<input type="submit" value="Оформить" id="issue"></a>
 						<p><i class="fa fa-shopping-cart fa-1px"></i>Число заявок: <p id="req-number"></div></p>
 					</form>

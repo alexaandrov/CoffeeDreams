@@ -1,22 +1,36 @@
+var formBuy = document.getElementById('form-buy');
+var anchors = document.getElementById('anchors');
+
 document.getElementById('buy').onclick = function() {
-	var formBuy = document.getElementById('form-buy');
 	formBuy.style.cssText="display: block;";
-	var anchors = document.getElementById('anchors');
 	anchors.style.cssText="display: none";
 };
 
 document.getElementById('quit').onclick = function() {
-	var formBuy = document.getElementById('form-buy');
 	formBuy.style.cssText="display: none";
-	var anchors = document.getElementById('anchors');
 	anchors.style.cssText="display: block";
 }
+buyers = 1;
+p = document.getElementById('req-number');
+p.innerHTML = buyers;
+function addBuyer() {
+	p.innerHTML = ++buyers;
+}
 
-var buyers = 0;
+function checkIssues() {
+	var issues = document.forms.issues;
+
 	document.getElementById('issue').onclick = function() {
-		
-		var p = document.getElementById('req-number');
-		p.innerHTML = buyers;
-		console.log(buyers);
-		buyers = buyers + 1;
+		if (issues.nick.value == "") {
+			alert("Напишите ваше имя");
+			return;
+		} 
+		if (issues.phone.value == "") {
+			alert("Напишите ваш телефон");
+			return;
+		}
+		addBuyer();
+		alert("Спасибо! Ваша заявка принята!")
+		formBuy.style.cssText="display: none";
 	}
+};
