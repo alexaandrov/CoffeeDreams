@@ -44,7 +44,7 @@
 
 	
 
-	<nav class="anchors-menu">
+	<nav class="anchors-menu" id="anchors">
 		<ul>
 			<li><a href="#top">Главная</a></li>
 			<li><a href="#about">Инфо</a></li>
@@ -57,13 +57,32 @@
 	</nav>
 
 	<main class="main">
+			<div class="form-buy" id="form-buy">
+				<div class="wrapper">
+					<div class="quit" id="quit"><i class="fa fa-times fa-3x"></i></div>
+					<div class="info">
+						<div class="img-wrap"><img src="img/mini-bork.jpg" height="100" width="100"></div>
+						<div class="text">
+							<h3>Кофейная станция BORK C805</h3>
+							<p class="price">199 990<i class="fa fa-rub fa-1x"></i></p>
+						</div>
+					</div>
+					<form> 
+						<input type="text" placeholder="Имя" maxlength="20" name="nick">
+						<input type="text" placeholder="Телефон" maxlenght="11" name="phone">
+						<input type="submit" value="Оформить" id="issue"></a>
+						<p><i class="fa fa-shopping-cart fa-1px"></i>Число заявок: <p id="req-number"></div></p>
+					</form>
+				</div>
+			</div>
+
 			<div class="section" id="top">
 				<div class="wrapper">
 					<div class="left-block">
 						<div class="buy">
 							<h2 class="h2-info">Bork C805</h2>
 							<p class="text">Ваша домашняя кофейня.</p>
-							<a href="http://www.bork.ru/eShop/Coffee-Makers/c805/#buy-one-click" class="button">Купить</a>
+							<input type="submit" value="Купить" id="buy"></a>
 						</div>
 						<div id="slider">
 							<i class="buttons left fa fa-chevron-left" onclick="slider.left();"></i>
@@ -82,7 +101,7 @@
 					
 				</div>
 			</div>
-
+			
 			<div class="section" id="about">
 				<div class="wrapper">
 					<div class="bork"></div>
@@ -247,4 +266,5 @@
 </body>
 <script src="./js/lightbox.js"></script>
 <script src="./js/gallery.js"></script>
+<script src="./js/formbuy.js"></script>
 </html>
