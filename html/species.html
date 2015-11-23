@@ -5,8 +5,11 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
 	<link rel="stylesheet" type="text/css" href="../css/species.css">
+	<link rel="stylesheet" media="all" href="../css/animate.css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="../js/wow.min.js"></script>
+	<script>new WOW().init();</script>
 </head>
 <body>
 <header class="header">
@@ -18,82 +21,249 @@
 					<li><a href="../index.html">Главная</a></li>
 					<li><a href="#">О нас</a></li>
 					<li><a href="#">О кофе</a></li>
-					<li><a href="#">Рецепты</a></li>
+					<li><a href="#">Виды кофе</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 
 <main class="main">
+	<div class="up"><a href="#menu"><i class="fa fa-chevron-circle-up fa-5x"></i></a></div>
 	<div class="section" id="logo">
-		<h1>Виды кофе</h1>
-		<div class="marker"><h2>Кофе — это ускользающее мгновение и благоухающий аромат. Клодия Роден</h2></div>
-		<a href="#menu"><p><i class="fa fa-chevron-circle-down fa-5x"></i></p></a>
+		<h1 class="fadeInDown wow">Виды кофе</h1>
+		<div class="marker fadeInRight wow"><h2>Кофе — это ускользающее мгновение и благоухающий аромат. Клодия Роден</h2></div>
+		<div class="mark fadeInUp wow"><a href="#menu"><p><i class="fa fa-chevron-circle-down fa-3x"></i></p></a></div>
 	</div>
 
 	<div class="section" id="menu">
+	<video id="video_bg" autoplay="autoplay" loop="loop">
+    		<source src="../video/specios.mp4" type="video/mp4"></source>
+		</video>
 		<div class="wrapper">
-			<a href="#"><div class="block">
+			<a href="#americano"><div class="block fadeInLeft wow">
 				<img src="../img/species/coffee/americano.png">
 				<p>Американо</p>
 			</div></a>
-			<a href="#"><div class="block">
+			<a href="#cappucino"><div class="block fadeInUp wow">
 				<img src="../img/species/coffee/cappucino.png">
 				<p>Капучино</p>
 			</div></a>
-			<a href="#"><div class="block">
+			<a href="#classic"><div class="block fadeInDown wow">
 				<img src="../img/species/coffee/classic.png">
 				<p>Ристретто</p>
 			</div></a>
-			<a href="#"><div class="block">
+			<a href="#crema"><div class="block fadeInRight wow">
 				<img src="../img/species/coffee/crema.png">
 				<p>Крема</p>
 			</div></a>
-			<a href="#"><div class="block">
+			<a href="#espresso"><div class="block fadeInLeft wow">
 				<img src="../img/species/coffee/espresso.png">
 				<p>Эспрессо</p>
 			</div></a>
-			<a href="#"><div class="block">
+			<a href="#flat"><div class="block fadeInDown wow">
 				<img src="../img/species/coffee/flat.png">
 				<p>Флэт</p>
 			</div></a>
-			<a href="#"><div class="block">
+			<a href="#intenso"><div class="block fadeInUp wow">
 				<img src="../img/species/coffee/intenso.png">
 				<p>Интенсо</p>
 			</div></a>
-			<a href="#"><div class="block">
+			<a href="#latte"><div class="block fadeInLeft wow">
 				<img src="../img/species/coffee/latte.png">
 				<p>Латтэ</p>
 			</div></a>
-			<a href="#"><div class="block">
+			<a href="#lungo"><div class="block fadeInRight wow">
 				<img src="../img/species/coffee/lungo.png">
 				<p>Лунго</p>
 			</div></a>
-			<a href="#"><div class="block">
+			<a href="#macchiato"><div class="block fadeInUp wow">
 				<img src="../img/species/coffee/macchiato.png">
 				<p>Латте Макиато</p>
 			</div></a>
-			<a href="#"><div class="block">
+			<a href="#makiato"><div class="block fadeInDown wow">
 				<img src="../img/species/coffee/makiato.png">
 				<p>Макиато</p>
 			</div></a>
-			<a href="#"><div class="block">
+			<a href="#soft"><div class="block fadeInLeft wow">
 				<img src="../img/species/coffee/soft.png">
 				<p>Заварной</p>
 			</div></a>
 		</div>
 	</div>
 	
-	<div class="section" id="americano">
-		<div class="img"></div>
-		<div class="text">
-			<h2>Кофе американо</h2>
-			<p class="proportion"></p>
-			<p class="history"></p>
+	<div class="coffee zoomIn wow" id="americano">
+		<div class="wrapper">
+			<img src="../img/species/coffee/americano.png">
+			<div class="text">
+				<h2><i class="fa fa-tag"></i>Американо</h2>
+				<p class="proportion"><i class="fa fa-check"></i>
+					60 мл эспрессо 
+					90 мл горячей воды
+				</p>
+				<p class="history">Кофе американо (или просто американо) готовится из двойной порции эспрессо с добавлением горячей воды для разбавления крепости. Некоторые предпочитают готовить американо из одной порции эспрессо (30 мл). 
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="coffee zoomInUp wow" id="cappucino">
+		<div class="wrapper">
+			<img src="../img/species/coffee/cappucino.png">
+			<div class="text">
+				<h2><i class="fa fa-tag"></i>Капучино</h2>
+				<p class="proportion"><i class="fa fa-check"></i>
+					60 мл эспрессо<br>
+					60 мл подогретого молока<br>
+					60 мл вспененного молока
+				</p>
+				<p class="history">Традиционный итальянский напиток, который готовится из одной порции эспрессо, горячего молока и молочной пены. В Италии капучино принято пить до 10 утра, но в Европе его употребляют в любое время дня.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="coffee bounceInRight wow" id="classic">
+		<div class="wrapper">
+			<img src="../img/species/coffee/classic.png">
+			<div class="text">
+				<h2><i class="fa fa-tag"></i>Ристретто</h2>
+				<p class="proportion"><i class="fa fa-check"></i>
+				22 мл эспрессо
+				</p>
+				<p class="history">В переводе с итальянского языка "ристретто" означает "ограниченный". Это разновидность эспрессо, приготовленного со стандартным количеством кофе и меньшим количеством воды. Для приготовления ристретто в Италии традиционно используют 22 мл кофе, в Северной Европе предпочитают более мягкий вариант — 40 мл кофе.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="coffee zoomInUp wow" id="crema">
+		<div class="wrapper">
+			<img src="../img/species/coffee/crema.png">
+			<div class="text">
+				<h2><i class="fa fa-tag"></i>Caffè Crema</h2>
+				<p class="proportion"><i class="fa fa-check"></i>
+				170 мл эспрессо
+				</p>
+				<p class="history">В переводе с итальянского языка — кремовый кофе. Двойная порция эспрессо, покрытая плотной кофейной пеной, является невероятной популярным напитком в приграничных к Италии районах Австрии и Швейцарии. Именно так назывался эспрессо в 1940–50-е годы, так как он готовился с плотной кофейной пеной.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="coffee bounceInLeft wow" id="espresso">
+		<div class="wrapper">
+			<img src="../img/species/coffee/espresso.png">
+			<div class="text">
+				<h2><i class="fa fa-tag"></i>Эспрессо</h2>
+				<p class="proportion"><i class="fa fa-check"></i>
+				30 мл эспрессо
+				</p>
+				<p class="history">Для приготовления эспрессо, изобретенного в Италии еще в 19 веке, небольшое количество закипающей воды (86–95 ºC) под давлением пропускается через мелкомолотый кофе. Пена, появляющаяся на поверхности напитка, является критерием качества эспрессо.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="coffee zoomInUp wow" id="flat">
+		<div class="wrapper">
+			<img src="../img/species/coffee/flat.png">
+			<div class="text">
+				<h2><i class="fa fa-tag"></i>Флэт</h2>
+				<p class="proportion"><i class="fa fa-check"></i>
+				30 мл эспрессо 
+				60 мл подогретого молока
+				</p>
+				<p class="history">Напиток появился в Новой Зеландии в 1970-х годах как альтернатива капучино с густой пеной. Основное отличие от капучино заключается в том, что во флэт уайт не добавляется вспененное молоко.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="coffee bounceInRight wow" id="macchiato">
+		<div class="wrapper">
+			<img src="../img/species/coffee/macchiato.png">
+			<div class="text">
+				<h2><i class="fa fa-tag"></i>Латте макиато</h2>
+				<p class="proportion"><i class="fa fa-check"></i>
+				60 мл эспрессо 
+				150 мл подогретого молока
+				150 мл вспененного молока
+				</p>
+				<p class="history">В переводе с итальянского языка "латте макиато" означает "пятнистое молоко". В отличие от латте, эспрессо добавляется в молоко, а не наоборот. Это окрашивает молоко в характерные кофейные "пятна". Также для приготовления латте макиато используется больше молочной пены и меньшая порция эспрессо.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="coffee zoomInUp wow" id="lungo">
+		<div class="wrapper">
+			<img src="../img/species/coffee/lungo.png">
+			<div class="text">
+				<h2><i class="fa fa-tag"></i>Эспрессо лунго</h2>
+				<p class="proportion"><i class="fa fa-check"></i>
+				90 мл эспрессо
+				</p>
+				<p class="history">В переводе с итальянского языка "лунго" означает "длинный". Рецепт его приготовления такой же, как и для эспрессо, однако под давлением проходит тройная порция воды, что увеливает объем напитка и содержание кофеина в нем. Французы называют эспрессо лунго "café allongé".</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="coffee bounceInLeft wow" id="latte">
+		<div class="wrapper">
+			<img src="../img/species/coffee/latte.png">
+			<div class="text">
+				<h2><i class="fa fa-tag"></i>Латте</h2>
+				<p class="proportion"><i class="fa fa-check"></i>
+				60 мл эспрессо 
+				300 мл подогретого молока 
+				20 мл вспененного молока
+				</p>
+				<p class="history">Кофе латте, также известный в Европе как cafe au lait (кофе с молоком), часто называют просто латте. Латте представляет собой эспрессо с большим количеством молока, и его очень легко приготовить в кофемашине. Будьте внимательны, заказывая латте в Италии, — вас могут неправильно понять и принести простой стакан молока!</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="coffee zoomInUp wow" id="makiato">
+		<div class="wrapper">
+			<img src="../img/species/coffee/makiato.png">
+			<div class="text">
+				<h2><i class="fa fa-tag"></i>Эспрессо макиато</h2>
+				<p class="proportion"><i class="fa fa-check"></i>
+				30 мл эспрессо
+				Небольшая порция вспененного молока
+				</p>
+				<p class="history">Слово "макиато" означает "пятнистый". Макиато — это эспрессо с добавлением небольшого количества взбитого молока. Не стоит путать макиато с капучино — кофе макиато присущи большая крепость и интенсивный аромат.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="coffee zoomInUp wow" id="intenso">
+		<div class="wrapper">
+			<img src="../img/species/coffee/intenso.png">
+			<div class="text">
+				<h2><i class="fa fa-tag"></i>Интенсо</h2>
+				<p class="proportion"><i class="fa fa-check"></i>
+				70 мл эспрессо
+				</p>
+				<p class="history">Очень крепкий эспрессо — для тех, кто предпочитает двойную порцию.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="coffee bounceInUp wow" id="soft">
+		<div class="wrapper">
+			<img src="../img/species/coffee/soft.png">
+			<div class="text">
+				<h2><i class="fa fa-tag"></i>Кофе американо</h2>
+				<p class="proportion"><i class="fa fa-check"></i>110 мл заварного кофе</p>
+				<p class="history">Это менее насыщенный кофе, для приготовления которого горячая вода проходит через молотый кофе в фильтре. Кофе можно готовить вручную или в кофемашине капельного типа. Для приготовления кофейного напитка не требуется высокое давление, поэтому кофейная пена не образуется, но достигается более округлый вкус, чем у эспрессо.<br><br>
+ 
+				В Германии заварной кофе подается, как правило, в чашках объемом 125 мл, а в США объем чашки составляет примерно 250 мл (около 9 унций). Молоко добавляется по желанию и не взбивается в пену. Сахар или сахарозаменитель также добавляются по вкусу: например, самый сладкий кофе предпочитают в Бразилии. В последнее время стала популярной тенденция добавлять в заварной кофе сливочное масло, которое помогает придерживаться установленной диеты и повышает тонус организма.<br><br>
+				 
+				В последнее время заварной кофе приобретает новую популярность в Европе. Иногда этот кофейный напиток подается холодным или заваривается медленным способом. "Медленный" кофе готовится традиционным способом, но при этом используется менее плотный фильтр, в результате чего получается кофе с очень мягким вкусом.<br><br>
+				 
+				Уровень кофеина в заварном кофе зависит от различных факторов: время варки, температура воды, время заваривания, степень помола, время обжарки, вид и качество зерен. В среднем уровень кофеина в одном миллилитре заварного кофе ниже, чем в эспрессо. Однако учитывая, что заварной кофе, как правило, подается в чашке большего объема, на одну порцию приходится около 90 мг кофеина (стандартная порция эспрессо содержит 40 мг). Таким образом, уровень кофеина в чашке заварного кофе выше, чем в чашке эспрессо.</p>
+			</div>
 		</div>
 	</div>
 </main>
-
 
 <footer class="main-footer">
 		<div class="main-footer-inner">

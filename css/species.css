@@ -3,7 +3,9 @@
 	width: 100%;
 	background-image: url(../img/species/logo.jpg);
 	background-position: center;
-	
+	-webkit-box-shadow: 2px 6px 17px -1px rgba(0,0,0,0.44);
+	-moz-box-shadow: 2px 6px 17px -1px rgba(0,0,0,0.44);
+	box-shadow: 2px 6px 17px -1px rgba(0,0,0,0.44);
 }
 
 .main #logo h1 {
@@ -28,10 +30,15 @@
 	color: #F4ECD9;
 }
 
+.main #logo .mark {
+	margin: 0 auto;
+	max-width: 120px;
+	margin-top: 210px;
+}
+
 .main #logo p {
-	text-align: center;
-	padding-left: 12%;
-	color: #5b392e;
+	font-size: 30px;
+	color: #b39389;
 }
 
 .main #logo p:hover {
@@ -39,24 +46,38 @@
 }
 
 .main #logo p:active {
-	color: #F4ECD9;
+	color: #54342a;
 }
 
-.main #logo i {
-	font-size: 120px;
+.main #menu {
+	margin-top: 50px;
+	width: 100%;
+	height: 720px;
+	background: fixed url() no-repeat;
+    background-size: cover;
 }
 
 .main #menu .wrapper {
 	max-width: 1300px;
+	height: 100%;
 	margin: 0 auto;
 }
 
 .main #menu .block {
 	float: left;
 	height: 200px;
-	width: 200px;
-	margin-left: 10px;
-	margin: 50px 0px;
+	width: 20%;
+	margin: 20px 0px;
+	margin-left: 50px;
+}
+
+.main #menu .block > *:hover {
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
 }
 
 .main #menu .block img {
@@ -66,15 +87,111 @@
 
 .main #menu .block p {
 	text-align: center;
-	color: black;
+	color: white;
 }
 
-.main #americano {
-	height: 1000px;
-	max-width: 1200px;
-	background: red;
+.main #menu #video_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1000;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
 }
 
 .main .coffee {
-	
+	width: 100%;
+	max-width: 2048px;
+	margin: 0 auto;
+	height: 400px;
+	background: white;
 }
+
+.main .coffee .wrapper {
+	padding-top: 25px;
+	max-width: 1200px;
+	height: 400px;
+	margin: 0 auto;
+}
+
+.main .coffee .wrapper img {
+	width: 30%;
+	height: 70%;
+	float: left;
+}
+
+.main .coffee .wrapper .text {
+	width: 70%;
+	overflow: hidden;
+}
+
+.main .coffee .wrapper .text .history br {
+	padding: 30px;
+	margin: 50px;
+}
+
+.main .coffee .wrapper .text h2 {
+	padding: 20px 0px;
+}
+
+.main .coffee .wrapper .text .proportion {
+	padding: 20px 0px;
+	padding-bottom: 40px;
+}
+
+
+.main .coffee .wrapper i {
+	padding-right: 5px;
+}
+
+.main #classic {
+	background: #f3f3f3;
+}
+
+.main #espresso {
+	background: #f3f3f3;
+}
+
+.main #americano {
+	background: #f3f3f3;
+}
+
+.main #intenso {
+	background: #f3f3f3;
+}
+
+.main #soft {
+	height: 800px;
+}
+
+.main #macchiato {
+	background: #f3f3f3;
+}
+
+.main #latte {
+	background: #f3f3f3;
+}
+
+
+.main .up {
+	position: fixed;
+	z-index: 1000;
+	bottom: 40px; right: 50px;
+}
+.main .up i {
+	color: #b39389;
+}
+
+.main .up i:hover {
+	color: #714639;
+}
+
+.main .up i:active {
+	color: #54342a;
+}
+
+
+
+
