@@ -181,6 +181,7 @@ body {
 	bottom: 40px; right: 50px;
 }
 .main .up i {
+	font-size: 80px;
 	color: #b39389;
 }
 
@@ -209,6 +210,19 @@ body {
 	.main #soft {
 		height: 1200px;
 	}
+	.main .up i {
+		font-size: 60px;
+	}
+	.main .up {
+		bottom: 15px;
+		right: 15px;
+	}
+}
+
+@media (max-width: 600px) {
+	.main #logo .mark { 
+		margin-top: 0px;
+	}
 }
 
 @media (max-width: 400px) {
@@ -220,5 +234,12 @@ body {
 	}
 	.main #soft {
 		height: 1000px;
+	}
+	.main .up i {
+		font-size: 40px;
+	}
+	.main .up {
+		bottom: 5px;
+		right: 5px;
 	}
 }
