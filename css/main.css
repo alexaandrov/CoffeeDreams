@@ -38,16 +38,6 @@ body {
 }
 
 @font-face {
-    font-family: "Noto";
-    src: url("../fonts/NotoSansRegular/NotoSansRegular.eot");
-    src: url("../fonts/NotoSansRegular/NotoSansRegular.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/NotoSansRegular/NotoSansRegular.woff") format("woff"),
-    url("../fonts/NotoSansRegular/NotoSansRegular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-
-@font-face {
     font-family: "Marck";
     src: url("../fonts/MarckScriptRegular/MarckScriptRegular.eot");
     src: url("../fonts/MarckScriptRegular/MarckScriptRegular.eot?#iefix")format("embedded-opentype"),
