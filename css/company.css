@@ -137,7 +137,6 @@ h2 {
 	display: table;
 }
 
-
 .main #what-are-we-doing .right {
 	margin-top: 100px;
 }
@@ -202,6 +201,7 @@ h2 {
 	text-align: center;
 	color: white;
 }
+
 .main #write-us-again .block input[type="text"]{
 	font-family: 'Comic Sans MS';
 	font-weight: bold;
@@ -269,6 +269,8 @@ h2 {
 	-o-transition: all 0.1s ease-out;
 	-webkit-transition: all 0.1s ease-out;
 }
+
+/* MEDIA */
 
 @media (max-width: 1000px) {
 	.main #what-are-we-doing .before-main {
