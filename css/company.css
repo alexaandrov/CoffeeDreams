@@ -9,6 +9,24 @@ h2 {
 	font-size: 50px;
 }
 
+.main .up {
+	position: fixed;
+	z-index: 1000;
+	bottom: 40px; right: 50px;
+}
+.main .up i {
+	font-size: 80px;
+	color: #b39389;
+}
+
+.main .up i:hover {
+	color: #714639;
+}
+
+.main .up i:active {
+	color: #54342a;
+}
+
 .main #logo {
 	height: 500px;
 	width: 100%;
@@ -87,10 +105,8 @@ h2 {
 .main #what-are-we-doing .block h4 {
 	font-family: UbuntuR;
 	font-size: 25px;
-	/*padding: 2px 0px;*/
-	/*margin: 15px 0px;*/
 	margin: 15px 10px;
-	padding: 0;	
+	padding: 0;
 	color: #6A4B35;
 }
 
@@ -147,6 +163,93 @@ h2 {
 	float: left;
 }
 
-.main #what-are-we-doing .number {
+.main #write-us-again {
+	background: fixed url(../img/company-bg-2.jpg) no-repeat;
+    background-size: cover;
+	padding-bottom: 50px;
+}
 
+.main #write-us-again .wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+	background-image: url(../img/console-bg.png);
+	padding-bottom: 50px;
+	-webkit-box-shadow: 0px 0px 22px 3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 22px 3px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 22px 3px rgba(0,0,0,0.75);
+}
+
+.main #write-us-again h3 {
+	padding-top: 50px;
+	padding-bottom: 20px;
+	font-size: 25px;
+	text-align: center;
+	color: white;
+}
+.main #write-us-again .block input[type="text"]{
+	font-family: 'Comic Sans MS';
+	font-weight: bold;
+	background: transparent;
+	border: none;
+	background-image: url(../img/4.png);
+	width: 94%;
+	font-size: 100%;
+	padding: 15px 30px;
+	margin: 5px 0;
+	margin-left: 3%;
+	margin-right: 3%;
+    -moz-transition: all 0.8s ease-out;
+	-o-transition: all 0.8s ease-out;
+	-webkit-transition: all 0.8s ease-out;
+	 box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 3px;
+    color: white;
+}
+
+.main #write-us-again .block input[type="text"]:focus {
+	background: white;
+	color: #6A4B35;
+}
+
+.main #write-us-again input[type="submit"] {
+    color: #fff;
+	background: transparent;
+	border: 2px solid white;
+    border-radius: 4px;
+	width: 20%;
+	padding: 20px 0px;
+	margin: 10px 0;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-top: 50px;
+	/*margin-bottom: 20px;*/
+	font-size: 20px;
+	text-decoration: none;
+	user-select: none;
+	font-family: Caviar, Arial;
+	font-weight: bold;
+	outline: none;
+	cursor: pointer;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	-webkit-transition: all 0.2s ease-out;
+}
+
+.main #write-us-again input[type="submit"]:hover {
+	background-color: white;
+	color: #6A4B35;
+}
+
+.main #write-us-again input[type="submit"]:active {
+	-webkit-box-shadow: inset 0px 0px 19px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 0px 19px 0px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 0px 19px 0px rgba(0,0,0,0.75);
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	-webkit-transition: all 0.1s ease-out;
 }
