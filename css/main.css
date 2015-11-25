@@ -89,6 +89,7 @@ a {
 
 
 /* MAIN HEADER */
+
 .header {
 	width: 100%;
 	max-width: 1280px;
@@ -169,19 +170,12 @@ a {
 	-webkit-transition: all 0.08s ease-out;
 }
 
-
-@media (max-width: 960px) {
-	.header .logo .img {
-		width: 260px;
-	}
-}
-
 .header .mini {
 	display: none;
 }
 
-
 /* ANCHORS-MENU */
+
 .anchors-menu {
 	background-image: url(../img/anchors-bg.jpg);
 	background-color: #5B392E;
@@ -236,7 +230,6 @@ a {
 	-moz-transition: all 1s ease-out;
 	-o-transition: all 1s ease-out;
 	-webkit-transition: all 1s ease-out;
-	/*display: block;*/
 }
 
 .main .form-buy .wrapper {
@@ -307,13 +300,13 @@ a {
 }
 
 .main .form-buy form input[type="submit"] {
-    color: #fff;
+	color: #fff;
 	background: #6F4E37;
-    border-radius: 4px;
+	border-radius: 4px;
 	width: 94%;
-	  box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	padding: 20px 0px;
 	margin: 10px 0;
 	margin-left: 3%;
@@ -322,7 +315,7 @@ a {
 	font-size: 17px;
 	text-decoration: none;
 	user-select: none;
-    border: 0 solid black;
+	border: 0 solid black;
 	font-family: Caviar, Arial;
 	font-weight: bold;
 	outline: none;
@@ -936,34 +929,6 @@ a {
 
 /* MEDIA */
 
-@media (max-width: 550px) {
-	.main-footer {
-		height: 125px;
-	}
-	.main-footer .footer-right {
-		display: none;
-	}
-
-	.main-footer .footer-main > ul > li {
-		margin-left:  18px;
-		margin-right: 18px;
-	}
-
-	.main-footer .footer-main {
-		width: 50%;
-		float: left;
-	}
-	.main-footer .footer-left {
-		width: 45%;
-	}
-}
-
-@media (max-width: 960px) {
-	.header .logo .img {
-		width: 260px;
-	}
-}
-
 @media (max-width: 1200px) {
 	.main #how-we-work .block p {
 		font-size: 21px;
@@ -979,6 +944,12 @@ a {
 		color: white;
 	}
 
+}
+
+@media (max-width: 960px) {
+	.header .logo .img {
+		width: 260px;
+	}
 }
 
 @media screen and (max-width: 760px) {
@@ -1042,6 +1013,27 @@ a {
 	}
 }
 
+@media (max-width: 550px) {
+	.main-footer {
+		height: 125px;
+	}
+	.main-footer .footer-right {
+		display: none;
+	}
+
+	.main-footer .footer-main > ul > li {
+		margin-left:  18px;
+		margin-right: 18px;
+	}
+
+	.main-footer .footer-main {
+		width: 50%;
+		float: left;
+	}
+	.main-footer .footer-left {
+		width: 45%;
+	}
+}
 
 @media screen and (max-width: 480px) {
 	.main #how-we-work .block p {
