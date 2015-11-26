@@ -969,6 +969,13 @@ a {
 
 }
 
+@media(max-width: 1000px) {
+	.main-footer .footer-main > ul > li {
+		margin-top: 12px;
+		margin-bottom: 30px;
+	}
+}
+
 @media (max-width: 960px) {
 	.header .logo .img {
 		width: 260px;
@@ -1093,11 +1100,3 @@ a {
 		margin-left: -70px;
 	}
 }
-
-@media(max-width: 1000px) {
-	.main-footer .footer-main > ul > li {
-		margin-top: 12px;
-		margin-bottom: 30px;
-	}
-}
-
