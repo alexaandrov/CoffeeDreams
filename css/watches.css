@@ -39,7 +39,7 @@
 	text-shadow:0 0 5px #A67B5B; 
 }
 
-.watches #point {
+.watches .point {
 	position:relative; 
 	bottom:25px; 
 	-moz-animation:mymove 1s ease infinite; 
@@ -70,7 +70,7 @@
 		font-size: 4em;
 	}
 
-	.watches #point {
+	.watches .point {
 		bottom: 10px;
 	}
 }
