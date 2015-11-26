@@ -3,6 +3,7 @@ body {
 	padding: 0;
 	background: fixed url(../img/company/company-bg.jpg) no-repeat;
     background-size: cover;
+    min-width: 380px;
 }
 
 h2 {
