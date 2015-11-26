@@ -586,10 +586,10 @@ a {
 .main #video-blog {
 	width: 100%;
 	overflow: hidden;
-	height: 800px;
+	height: 850px;
 	background-image: url(../img/main-bg.jpg);
 	background-position: center;
-	background-size: 100% 800px;
+	background-size: 100% 850px;
 }
 
 .main #video-blog .wrapper {
@@ -599,7 +599,7 @@ a {
 }
 
 .main #video-blog h2 {
-	font-size: 70px;
+	font-size: 55px;
 	text-align: center;
 	padding-top: 25px;
 	color: white;
@@ -656,6 +656,18 @@ a {
 	padding-right: 5px;
 }
 
+.main #video-blog .soc-buttons {
+	margin: 0 auto;
+	max-width: 280px;
+	/*text-align: center;*/
+	margin-top: 25px;
+}
+
+.main #video-blog .soc-buttons h3 {
+	color: white;
+	font-size: 30px;
+	/*right: 40px;*/
+}
 .main #how-we-work {
 	background-image: url(../img/how-we-work/bg.jpg);
 	background-size: 100% 1450px;
@@ -1051,7 +1063,7 @@ a {
 	}
 
 	.main #video-blog h2 {
-		font-size: 45px;
+		font-size: 40px;
 	}
 
 	.main #video-blog p {
