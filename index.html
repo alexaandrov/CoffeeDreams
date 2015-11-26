@@ -21,7 +21,7 @@
 <body>
 	<header class="header">
 		<div class="wrapper bounceInUp wow">
-			<div class="logo"><i class="main-header-logo"><a href="#"><div class="img"></div></a></i>
+			<div class="logo"><i class="main-header-logo"><a href="#"><i class="img"></i></a></i>
 			</div>
 			<nav class="navigation">
 				<ul class="nav-menu">
@@ -51,7 +51,7 @@
 				<div class="wrapper">
 					<div class="quit" id="quit"><i class="fa fa-times fa-3x"></i></div>
 					<div class="info">
-						<div class="img-wrap"><img src="img/mini-bork.jpg" height="100" width="100"></div>
+						<div class="img-wrap"><img src="img/mini-bork.jpg" height="100" width="100" alt="bork"></div>
 						<div class="text">
 							<h3>Кофейная станция BORK C805</h3>
 							<p class="price">199 990<i class="fa fa-rub fa-1x"></i></p>
@@ -59,20 +59,19 @@
 					</div>
 					<form name="issues" onSubmit="checkIssues(); return(false);"> 
 						<input type="text" placeholder="Имя" maxlength="20" name="nick" value="">
-						<input type="text" placeholder="Телефон" maxlenght="11" name="phone" value="">
-						<input type="submit" value="Оформить" id="issue"></a>
-						<p><i class="fa fa-shopping-cart fa-1px"></i>Число заявок: <p id="req-number"></div></p>
+						<input type="text" placeholder="Телефон" maxlength="11" name="phone" value="">
+						<input type="submit" value="Оформить" id="issue">
+						<p><i class="fa fa-shopping-cart fa-1px"></i>Число заявок: <p id="req-number"></p>
 					</form>
 				</div>
 			</div>
-
 			<div class="section" id="top">
 				<div class="wrapper">
 					<div class="left-block">
 						<div class="buy bounceInLeft wow">
 							<h2 class="h2-info">Bork C805</h2>
 							<p class="text">Ваша домашняя кофейня.</p>
-							<input type="submit" value="Купить" id="buy"></a>
+							<input type="submit" value="Купить" id="buy">
 						</div>
 						<div class="bounceInLeft wow" id="slider">
 							<i class="buttons left fa fa-chevron-left" onclick="slider.left();"></i>
@@ -107,7 +106,7 @@
 				<div class="wrapper">
 					<h2>Убедитесь сами</h2>
 					<div class="border">
-						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/n1WOkdolaoE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+						<iframe class="youtube-bg" src="https://www.youtube.com/embed/n1WOkdolaoE?rel=0&amp;showinfo=0" allowfullscreen></iframe>
 					</div>
 					<p><i class="fa fa-coffee"></i>CoffeDreams</p>
 					<div class="soc-buttons">
@@ -122,7 +121,6 @@
 					    h.appendChild(s);
 					  }})();</script>
 					<div class="pluso" data-background="transparent" data-options="big,square,multiline,horizontal,counter,theme=04" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print" data-title="Coffee Dreams" data-description="Рекламная компания" data-url="http://coffeedreams.do.am/index.html"></div>
-				</div>
 				</div>
 				</div>
 			</div>
@@ -166,9 +164,9 @@
 	
 			<div class="section fadeInDown wow" data-wow-delay="0.5s" id="gallery">
 				<div id="bg"><a href="#" class="nextImageBtn" title="next"></a><a href="#" class="prevImageBtn" title="previous"></a><img src="./img/gallery/photos/8.jpg" width="1620" height="1080" alt="Beatufil" title="Beautiful" id="bgimg" /></div>
-				<div class="preloader-wrap"><div id="preloader"><img src="./img/gallery/ajax-loader_dark.gif" width="32" height="32" /></div></div>
+				<div class="preloader-wrap"><div id="preloader"><img src="./img/gallery/ajax-loader_dark.gif" width="32" height="32" alt="image" /></div></div>
 				<div class="title_wrap">><div id="img_title"></div></div>
-				<div id="toolbar"><a href="#" title="Maximize" onClick="ImageViewMode('full');return false"><img src="./img/gallery/toolbar_fs_icon.png" width="50" height="50"  /></a></div>
+				<div id="toolbar"><a href="#" title="Maximize" onClick="ImageViewMode('full');return false"><img src="./img/gallery/toolbar_fs_icon.png" width="50" height="50" alt="image"  /></a></div>
 				<div id="thumbnails_wrapper">
 				<div id="outer_container">
 				<div class="thumbScroller">
@@ -206,7 +204,7 @@
 			<div class="section" id="map">
 				<div class="wrapper rubberBand wow"><h2>Наш офис</h2></div>
 				<div class="border fadeInUp wow" data-wow-delay="0.5s">
-						<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=zAC04BeeDj2r8PoQ9zyeEsF7Q3uIpF_Q&width=100%&height=100%&lang=ru_RU&sourceType=constructor"></script>
+						<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=zAC04BeeDj2r8PoQ9zyeEsF7Q3uIpF_Q&amp;lang=ru_RU&amp;sourceType=constructor"></script>
 				</div>
 			</div>
 
@@ -227,49 +225,41 @@
 						</div>
 					</div>
 					<div class="wrapper fadeIn wow" data-wow-delay="1s">
-						<form action="action.php" method="post" type="text" name="get-form">
+						<form action="#write-us" method="post" name="get-form">
 							<h3>Самое время написать нам!</h3>
 							<input type="text" placeholder="Имя" name="nick">
 							<input type="text" placeholder="Телефон" name="phone">
-							<textarea name="message" rows="4" cols="55" wrap="virtual" placeholder="Ваше сообщение"></textarea>
-							<input type="submit" value="Отправить" id="submit"></a>
+							<textarea name="message" rows="4" cols="55" placeholder="Ваше сообщение"></textarea>
+							<input type="submit" value="Отправить" id="submit">
 						</form>
 					</div>
 			</div>
 
 	</main>
 
-
-
 	<footer class="main-footer">
 		<div class="main-footer-inner">
 				<div class="footer-left"><p class="copyright">All rights reserved 2015.<br>Created by <a href="#"> Alexandroff</a></p></div>
 				<div class="footer-main">
 					<ul>
-						<li><a href="https://twitter.com/bork_rus"><img src="./img/main-footer/twitter.jpg"></li></a>
-						<li><a href="https://www.facebook.com/BORKrus"><img src="./img/main-footer/facebook.jpg"></a></li>
-						<li><a href="https://vk.com/borkrus"><img src="./img/main-footer/vk.jpg"></a></li>
-						<li><a href="http://ok.ru/group/57143310417970"><img src="./img/main-footer/ok.jpg"></a></li>
-						<li><a href="https://instagram.com/bork_com/"><img src="./img/main-footer/inst.jpg"></a></li>
-						<li><a href="http://www.youtube.com/user/borkindustrial"><img src="./img/main-footer/youtube.jpg"></a></li>
-
+						<li><a href="https://twitter.com/bork_rus"><img src="./img/main-footer/twitter.jpg" alt="twitter"></a></li>
+						<li><a href="https://www.facebook.com/BORKrus"><img src="./img/main-footer/facebook.jpg" alt="facebook"></a></li>
+						<li><a href="https://vk.com/borkrus"><img src="./img/main-footer/vk.jpg" alt="vk"></a></li>
+						<li><a href="http://ok.ru/group/57143310417970"><img src="./img/main-footer/ok.jpg" alt="ok"></a></li>
+						<li><a href="https://instagram.com/bork_com/"><img src="./img/main-footer/inst.jpg" alt="inst"></a></li>
+						<li><a href="http://www.youtube.com/user/borkindustrial"><img src="./img/main-footer/youtube.jpg" alt="youtube"></a></li>
 					</ul>
 				</div>
 
 				<div class="footer-right">
-				<!-- Yandex.Metrika informer --><a href="https://metrika.yandex.ru/stat/?id=33829554&amp;from=informer"target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/33829554/3_1_B9B9B9FF_999999FF_0_pageviews"style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" /></a><!-- /Yandex.Metrika informer --> <!-- Yandex.Metrika counter --><script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter33829554 = new Ya.Metrika({ id:33829554, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="https://mc.yandex.ru/watch/33829554" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+				<!-- Yandex.Metrika informer --><a href="https://metrika.yandex.ru/stat/?id=33829554&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/33829554/3_1_B9B9B9FF_999999FF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" /></a><!-- /Yandex.Metrika informer --> <!-- Yandex.Metrika counter --><script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter33829554 = new Ya.Metrika({ id:33829554, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="https://mc.yandex.ru/watch/33829554" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
 
 				<!-- <a href="http://counter.co.kz" target="_blank"><img src="http://counter.co.kz/CounterCoKz?page=file__C_Users_Alexandroff_YandexDisk_Develop_web-develop_pr_pr-land_html_index.html&style=lynz&digits=5" alt="Счетчик посещений Counter.CO.KZ - бесплатный счетчик на любой вкус!" border=0 width="75" height="20"></a> -->
 				</div>
 		</div>
 	</footer>
-
-
-
-
-
-</body>
 <script src="./js/lightbox.js"></script>
 <script src="./js/gallery.js"></script>
 <script src="./js/formbuy.js"></script>
+</body>
 </html>
