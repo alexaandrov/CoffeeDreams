@@ -4,7 +4,7 @@
 	<title>Coffee Dreams</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
-	<meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" /> 
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" />
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -22,7 +22,8 @@
 </head>
 <body>
 	<header class="header">
-		<div class="wrapper bounceInUp wow">
+		<div class="wrapper bounceInUp">
+			<div class="mini-menu"><i class="fa fa-bars fa-2x" id="menu-btn"></i><i class="fa fa-anchor fa-2x" id="anchor-btn"></i></div>
 			<div class="logo"><i class="main-header-logo"><a href="#"><i class="img"></i></a></i>
 			</div>
 			<nav class="navigation">
@@ -45,6 +46,15 @@
 			<li><a href="#gallery">Галерея</a></li>
 			<li><a href="#map">Карта</a></li>
 			<li><a href="#write-us">Контакты</a></li>
+		</ul>
+	</nav>
+
+	<nav class="main-mini-menu" id="main-mini-menu">
+		<ul>
+			<li><i class="img"></i></li>
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="html/species.html">Виды кофе</a></li>
+			<li><a href="html/company.html">О компании</a></li>
 		</ul>
 	</nav>
 
@@ -264,7 +274,7 @@
 
 <script src="./js/lightbox.js"></script>
 <script src="./js/gallery.js"></script>
-
+<script src="./js/mini.js"></script>
 <script type="text/javascript"></script>
 <script src="./js/formbuy.js"></script>
 </body>

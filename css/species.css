@@ -240,14 +240,17 @@ p {
 		font-size: 60px;
 	}
 	.main .up {
-		bottom: 15px;
+		bottom: 10px;
 		right: 15px;
 	}
 }
 
 @media (max-width: 600px) {
-	.main #logo .mark { 
-		margin-top: 0px;
+	.main #logo h1 {
+		padding-top: 50px;
+	}
+	.main #logo .mark {
+		display: none;
 	}
 }
 
