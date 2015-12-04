@@ -1,7 +1,8 @@
 body {
 	margin: 0 auto;
 	padding: 0;
-	min-width: 250px;
+	min-width: 300px;
+	background-color: #7D7D7D;
 }
 
 /* FONTS AND TITLES */
@@ -47,32 +48,40 @@ body {
     font-weight: normal;
 }
 
+::selection {background: #7BE77B;}
+::-moz-selection {background: #7BE77B;}
+::-webkit-selection {background: #7BE77B; color:#fff;}
+
 h1 {
-	font-family: UbuntuR;
+	font-family: Caviar, Arial;
 	margin: 0;
 	padding: 0;
+	font-size: 55px;
+	color: white;
+	text-align: center;
+	padding-top: 35px;
+	padding-bottom: 25px;
 }
 
 h2 {
-	font-family: Caviar, Arial;
+	font-family: CaviarBold, Arial;
+	font-size: 45px;
 	margin: 0;
 	padding: 0;
+	color: white;
 }
-
-.h2-good {
-	font-family: Caviar, Arial;
-} 
 
 h3 {
-	font-family: CaviarBold, Arial;
-	padding: 0;
+	font-family: Caviar, Arial;
 	margin: 0;
+	padding: 0;
+	color: white;
 }
-
 
 p {
 	font-family: Caviar;
-	font-size: 20px;
+	color: white;
+	font-size: 35px;
 	margin: 0;
 	padding: 0;
 }
@@ -382,11 +391,9 @@ a {
 	margin-left: 10%;
 }
 
-.main #top .buy .h2-info {
-	color: white;
+.main #top .buy h2 {
 	font-family: UbuntuR, Arial;
 	text-align: center;
-	font-size: 55px;
 	margin-bottom: 10px;
 	text-shadow: rgb(13, 6, 1) -4px 5px 1px;
 }
@@ -569,7 +576,6 @@ a {
 .main #about .info h2 {
 	margin-top: 30px;
 	font-size: 40px;
-	color: white;
 }
 
 .main #about .info i {
@@ -600,21 +606,15 @@ a {
 }
 
 .main #video-blog h2 {
-	font-size: 55px;
 	text-align: center;
-	padding-top: 25px;
-	color: white;
 }
 
 .main #video-blog .border {
-	/*background-image: url(../img/how-we-work/5.jpg);
-	background-repeat: no-repeat;
-	background-size: 100%;*/
 	background: black;
 	border-radius: 15px;
 	border: 15px solid black;
 	height: 530px;
-	margin-top: 25px;
+	margin-top: 5px;
 	overflow: hidden;
 	box-shadow: 0px 20px 50px rgba(1,0,0,1);
 	-webkit-box-shadow: 0px 20px 50px rgba(1,0,0,1);
@@ -634,7 +634,6 @@ a {
 	z-index: 101;
 	font-size: 50px;
 	text-align: center;
-	color: white;
 	padding: 8px 0;
 	margin-top: -75px;
 	cursor: default;
@@ -669,9 +668,7 @@ a {
 }
 
 .main #video-blog .soc-buttons h3 {
-	color: white;
 	font-size: 30px;
-	/*right: 40px;*/
 }
 .main #how-we-work {
 	background-image: url(../img/how-we-work/bg.jpg);
@@ -685,14 +682,6 @@ a {
 	max-width: 1280px;
 	margin: 0 auto;
 	height: 100%;
-}
-
-.main #how-we-work .wrapper .h2-good {
-	color: white;
-	font-size: 35px;
-	text-align: center;
-	padding-top: 35px;
-	padding-bottom: 35px;
 }
 
 .main #how-we-work .block {
@@ -723,7 +712,6 @@ a {
 	height: 200px;
 	padding: 0 10px;
 	text-align: center;
-	color: white;
 	font-size: 28px;
 }
 
@@ -742,11 +730,9 @@ a {
 }
 
 .main #map h2 {
-	font-size: 70px;
 	font-weight: bold;
 	text-align: center;
 	z-index: 101;
-	color: white;
 	padding-top: 40px;
 }
 
@@ -807,7 +793,7 @@ a {
 	opacity: 1;
 }
 
-.main #write-us form h3 {
+.main #write-us form h2 {
 	color: white;
 	text-align: center;
 	font-size: 30px;
@@ -892,6 +878,7 @@ a {
 	opacity: 0.9;
 	margin: 0;
 	margin-bottom: 0px;
+
 }
 
 .main-footer-inner {
@@ -964,7 +951,6 @@ a {
 	.main #about .info h2 {
 		margin-top: 10px;
 		font-size: 35px;
-		color: white;
 	}
 
 }
@@ -1024,9 +1010,7 @@ a {
 
 	.main #about .info h2 {
 		margin-top: 30px;
-		font-size: 35px;
-		color: white;
-	}
+		font-size: 35px;	}
 	
 	.main #how-we-work {
 		height: auto;
@@ -1044,6 +1028,9 @@ a {
 }
 
 @media (max-width: 550px) {
+	h1 {
+		font-size: 35px;
+	}
 	.main-footer {
 		height: 125px;
 	}
@@ -1077,7 +1064,6 @@ a {
 	.main #about .info h2 {
 		margin-top: 10px;
 		font-size: 30px;
-		color: white;
 	}
 
 	.main #video-blog h2 {
@@ -1090,6 +1076,9 @@ a {
 }
 
 @media (max-width: 350px) {
+	.main #write-us form h2 {
+		font-size: 25px;
+	}
 	.main-footer .footer-left {
 		margin: 0 auto;
 		width: 100%;
