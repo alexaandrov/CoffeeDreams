@@ -69,10 +69,10 @@
 							<p class="price">199 990<i class="fa fa-rub fa-1x"></i></p>
 						</div>
 					</div>
-					<form name="issues" onSubmit="checkIssues(); return(false);"> 
-						<input type="text" placeholder="Имя" maxlength="20" name="nick" value="">
-						<input type="text" placeholder="Телефон" maxlength="11" name="phone" value="">
-						<input type="submit" value="Оформить" id="issue">
+					<form name="issues"> 
+						<input type="text" placeholder="Имя" maxlength="20" name="nick" value="" class="name">
+						<input type="text" placeholder="(999-123-23-45)" maxlength="10" name="phone" value="" class="phone">
+						<input type="submit" value="Оформить" class="sumbit-form-buy">
 						<p><i class="fa fa-shopping-cart fa-1px"></i>Число заявок: <p id="req-number"></p>
 					</form>
 				</div>
@@ -240,12 +240,12 @@
 						</div>
 					</div>
 					<div class="wrapper fadeIn wow" data-wow-delay="1s">
-						<form action="#write-us" method="post" name="get-form">
+						<form>
 							<h2>Самое время написать нам!</h2>
-							<input type="text" placeholder="Имя" name="nick">
-							<input type="text" placeholder="Телефон" name="phone">
-							<textarea name="message" rows="4" cols="55" placeholder="Ваше сообщение"></textarea>
-							<input type="submit" value="Отправить" id="submit">
+							<input type="text" placeholder="Имя" name="name" class="login">
+							<input type="email" placeholder="Почта" name="email" class="email">
+							<textarea name="message" rows="4" cols="55" placeholder="Ваше сообщение" class="textare"></textarea>
+							<input class="send-form" type="submit" value="Отправить">
 						</form>
 					</div>
 			</div>
@@ -271,11 +271,10 @@
 				</div>
 		</div>
 	</footer>
-
 <script src="./js/lightbox.js"></script>
 <script src="./js/gallery.js"></script>
 <script src="./js/mini.js"></script>
-<script type="text/javascript"></script>
+<script src="./js/formsend.js"></script>
 <script src="./js/formbuy.js"></script>
 </body>
 </html>
