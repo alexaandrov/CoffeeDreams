@@ -33,13 +33,11 @@ $(function() {
 				  'text': text
 				},
 				success: function() {
-					addBuyer();
-					alert("Спасибо! Ваша заявка принята!")
+					alert("Спасибо " + login + "!" + " Ваше сообщение принято!")
 					formBuy.style.cssText="display: none";
 				},
 				error: function() {
 					alert("Ошибка при отправке данных");
-					login="";
 				}
 			});
 		}

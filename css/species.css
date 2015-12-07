@@ -1,7 +1,7 @@
 body {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
-	min-width: 350px;
+	max-width: 2048px;
 }
 
 
@@ -259,7 +259,7 @@ p {
 		height: 1500px;
 	}
 	.main .coffee .wrapper .text .history {
-		font-size: 10px;
+		font-size: 15px;
 	}
 	.main #soft {
 		height: 1000px;
@@ -270,5 +270,27 @@ p {
 	.main .up {
 		bottom: 5px;
 		right: 5px;
+	}
+	
+	.main .coffee .wrapper .text h2 {
+		padding: 0px 0;
+	}
+
+	.main .coffee .wrapper .text .proportion {
+		padding-bottom: 15px;
+	}
+
+	.main .coffee .wrapper .text {
+		width: 100%;
+		padding: 0 20px;
+		padding-right: 60px;
+	}
+
+	.main .coffee .wrapper .text .history {
+		font-size: 14px;
+	}
+	
+	.main .coffee img {
+		display: none;
 	}
 }

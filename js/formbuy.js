@@ -53,14 +53,13 @@ $(function () {
 				},
 				success: function() {
 					addBuyer();
-					alert("Спасибо! Ваша заявка принята!")
+					alert("Спасибо " + name + "!" + " Наш оператор перезвонит вам в течение 1 минуты.");
 					formBuy.style.cssText="display: none";
 					$('.name').val('');
 					$('.phone').val('');
 				},
 				error: function() {
 					alert("Ошибка при отправке данных");
-					
 				}
 			});
 		}

@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
 <html>
 <head>
 	<title>О компании</title>
@@ -9,6 +10,7 @@
 	<link rel="stylesheet" media="all" href="../css/animate.css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="../js/jquery.min.js"></script>
 	<script src="../js/wow.min.js"></script>
 	<script>new WOW().init();</script>
 </head>
@@ -176,11 +178,11 @@
 		<div class="wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
 			<div class="block">
 				<h3>Хотите с нами связаться? Оставьте свои данные!</h3>
-				<form action="#write-us-again" method="post" name="get-form">
-					<input type="text" placeholder="Александр" name="name">
-					<input type="text" placeholder="+7 (9хх) ххх хх хх" name="phone">
-					<input type="submit" value="Отправить" id="submit">
-			</form>
+				<form>
+					<input type="text" placeholder="Александр" name="name" class="name">
+					<input type="text" placeholder="(903) 324 23 23" maxlength="10" name="phone" class="phone">
+					<input type="submit" value="Отправить" class="send-form">
+				</form>
 			</div>
 		</div>
 	</div>
@@ -188,7 +190,7 @@
 
 <footer class="main-footer">
 		<div class="main-footer-inner">
-				<div class="footer-left"><p class="copyright">All rights reserved 2015.<br>Created by <a href="#"> Alexandroff</a></p></div>
+				<div class="footer-left"><p class="copyright">All rights reserved 2015.<br>Created by <a href="#">Alexandroff Gregory</a></p></div>
 				<div class="footer-main">
 					<ul>
 						<li><a href="https://twitter.com/bork_rus"><img src="../img/main-footer/twitter.jpg" alt="twitter"></a></li>
@@ -204,6 +206,8 @@
 				</div>
 		</div>
 	</footer>
+
+<script src="../js/formcompany.js"></script>
 <script src="../js/mini.js"></script>
 </body>
 </html>
