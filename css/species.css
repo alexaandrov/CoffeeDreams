@@ -1,6 +1,7 @@
 body {
 	margin: 0 auto;
 	padding: 0;
+	min-width: 320px;
 	max-width: 2048px;
 }
 
@@ -221,7 +222,7 @@ p {
 
 @media (max-width: 1200px) {
 	.main .coffee .wrapper .text .history {
-		font-size: 16px;
+		font-size: 19px;
 	}
 
 	.main #menu {
@@ -231,7 +232,7 @@ p {
 
 @media (max-width: 800px) {
 	.main .coffee .wrapper .text .history {
-		font-size: 14px;
+		font-size: 17px;
 	}
 	.main #soft {
 		height: 1200px;
@@ -246,6 +247,9 @@ p {
 }
 
 @media (max-width: 600px) {
+	.main .coffee .wrapper .text .history {
+		font-size: 16px;
+	}
 	.main #logo h1 {
 		padding-top: 50px;
 	}
@@ -254,12 +258,24 @@ p {
 	}
 }
 
+@media (max-width: 480px) {
+	.main .coffee .wrapper .text .history {
+		font-size: 14px;
+	}
+	.main #logo .marker {
+		width: 300px;
+	}
+	.main #logo .marker h2 {
+		font-size: 22px;
+	}
+}
+
 @media (max-width: 400px) {
 	.main #menu {
 		height: 1500px;
 	}
 	.main .coffee .wrapper .text .history {
-		font-size: 15px;
+		font-size: 14px;
 	}
 	.main #soft {
 		height: 1000px;
@@ -273,7 +289,7 @@ p {
 	}
 	
 	.main .coffee .wrapper .text h2 {
-		padding: 0px 0;
+		padding: 0;
 	}
 
 	.main .coffee .wrapper .text .proportion {
@@ -282,12 +298,7 @@ p {
 
 	.main .coffee .wrapper .text {
 		width: 100%;
-		padding: 0 20px;
-		padding-right: 60px;
-	}
-
-	.main .coffee .wrapper .text .history {
-		font-size: 14px;
+		padding: 0px;
 	}
 	
 	.main .coffee img {
