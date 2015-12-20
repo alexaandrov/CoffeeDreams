@@ -33,8 +33,10 @@ $(function() {
 				  'text': text
 				},
 				success: function() {
-					alert("Спасибо " + login + "!" + " Ваше сообщение принято!")
-					formBuy.style.cssText="display: none";
+					alert("Спасибо " + login + "!" + " Ваше сообщение принято!");
+					$('.login').val('');
+					$('.email').val('');
+					$('.textare').val('');
 				},
 				error: function() {
 					alert("Ошибка при отправке данных");

@@ -19,6 +19,12 @@
 	<script src="./js/slider.js"></script>
 	<script src="./js/gallery.js"></script>
 	<script src="./js/wow.min.js"></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script>
+            function onSuccess() {
+            	document.getElementById('form-buy-captcha').style.cssText= "display:block;"
+            }
+    </script>
 	<script>new WOW().init();</script>
 </head>
 <body>
@@ -73,7 +79,8 @@
 					<form name="issues"> 
 						<input type="text" placeholder="Александр" maxlength="20" name="nick" value="" class="name">
 						<input type="text" placeholder="(952) 123 23 45" maxlength="10" name="phone" value="" class="phone">
-						<input type="submit" value="Оформить" class="sumbit-form-buy">
+						<div class="g-recaptcha" data-sitekey="6LfMhBMTAAAAAAhhmCu6tJAdXbw2cfFCZ8AQXfFx" data-callback="onSuccess"></div>
+						<input type="submit" value="Оформить" class="sumbit-form-buy" id="form-buy-captcha">
 						<p><i class="fa fa-shopping-cart fa-1px"></i>Число заявок: <p id="req-number"></p>
 					</form>
 				</div>
@@ -277,5 +284,6 @@
 <script src="./js/mini.js"></script>
 <script src="./js/formsend.js"></script>
 <script src="./js/formbuy.js"></script>
+<!-- 6LfMhBMTAAAAAAhhmCu6tJAdXbw2cfFCZ8AQXfFx -->
 </body>
 </html>

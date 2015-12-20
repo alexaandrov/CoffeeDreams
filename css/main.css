@@ -287,7 +287,7 @@ a {
 	top: 50%;
 	margin: -240px 0px 0px -260px;
 	width: 500px;
-	height: 450px;
+	height: 550px;
 	background-color: white;
 	-webkit-box-shadow: -2px 2px 23px 7px rgba(0,0,0,0.64);
 	-moz-box-shadow: -2px 2px 23px 7px rgba(0,0,0,0.64);
@@ -371,6 +371,7 @@ a {
 	-o-transition: all 0.2s ease-out;
 	-webkit-transition: all 0.2s ease-out;
 	cursor: pointer;
+	display: none;
 }
 
 .main .form-buy form input[type="submit"]:hover {
@@ -730,6 +731,7 @@ a {
 	float: left;
 	margin-top: 0px;
 	margin-bottom: 20px;
+	margin: 0.5%;
 }
 
 .main #how-we-work .blocks .photo img {
@@ -1075,6 +1077,10 @@ a {
 		-o-transition: all 0.2s ease-out;
 		-webkit-transition: all 0.2s ease-out;
 	}
+	
+	.main #how-we-work .block {
+		margin: 0 auto;
+	}
 
 	.main #map .border {
 		margin: 0 auto;
@@ -1197,7 +1203,7 @@ a {
 		margin-left: -70px;
 	}
 	.main .form-buy .wrapper {
-		height: 480px;
+		height: 550px;
 		min-width: 320px;
 	}
 }
