@@ -1,3 +1,3 @@
 # CoffeeDreams
-coffeedreams.willapp.ru
+htpp://coffeedreams.willapp.ru
 Project activity MAMI. Landing-page.
